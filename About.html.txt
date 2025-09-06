@@ -1,0 +1,94 @@
+ABOUT
+----------------
+
+
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - The Conscientious Life</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .flex-grow {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-3 border-b border-gray-200">
+                <a href="index.html" class="flex items-center space-x-2 text-gray-800">
+                    <span class="text-xl md:text-2xl font-bold text-teal-600">Δ</span>
+                    <span class="text-lg md:text-xl font-medium tracking-tight">The Conscientious Life</span>
+                </a>
+                <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-600">
+                    <a href="about.html" class="hover:text-teal-600 transition-colors text-teal-600">About</a>
+                    <a href="#" class="hover:text-teal-600 transition-colors">Blog</a>
+                    <a href="#" class="hover:text-teal-600 transition-colors">Contact</a>
+                    <a href="#" class="hover:text-teal-600 transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-teal-600 transition-colors">Resources</a>
+                </nav>
+                <div class="relative hidden md:block">
+                    <input type="text" placeholder="Search..." class="border rounded-md py-1.5 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition">
+                    <svg class="w-4 h-4 absolute right-3 top-1/2 -translate-y-1/2 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-gray-800">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden py-2">
+                <a href="about.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">About</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">Blog</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">Contact</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">Privacy Policy</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">Resources</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <h1 class="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-8">Our Philosophy</h1>
+        <div class="max-w-4xl mx-auto space-y-6 text-lg text-gray-700 leading-relaxed">
+            <p>This blog is to provide a guide to assist people who feel overwhelmed by the modern world, who want to take control of their lives and make a difference while having a sense of balance as to who one truly is and being at one with their environment/world/externus.</p>
+            <p>This is a non-denominational site (there is no belief system implied or being referenced), and what is written is from a humanist perspective. It is hoped that what is written can provide a semblance of hope and allow one to utilise what is conveyed and can be applied to one's everyday dealings in the most positive and proactive manner possible.</p>
+            <p>In the age of Individualism, technology plays on the fears, preferences etc. which further isolates us and heightens those negative emotions further isolating us. This blog aims to assist people in lifting the veil (veil of maya) that restricts those from attaining their true self and see how that perpetuates into society. We as human beings are feeling like the true definition of who we are is defined by our status, consumption habits, wealth etc. those of physical/finite manner, which are temporary and something that never fulfils as humans. These desires are from without, never being satisfied as Socrates mentioned "unfettered desires are like a leaky jar, it can never be filled." From the use of technology to the ever burgeoning urbanisation of society, we are losing the experience of viewing nature and from this our every day experience is dulled, to such an extent, that we are no longer living in the moment and enjoying and relishing the fact we are alive but rather direct our attention to the next experience that requires us to escape from the moments we live in. As the algorithms continue to enforce our world views and keep us hooked on what our virtual world is, we then strive for the experiences we see of those who have lavish lifestyles etc. and that is what we convince ourselves to endeavour for and that that will bring satisfaction etc.</p>
+            <p>When we seek to change aspects of our life, our nature is to think of the whole change and with even the greatest will this leads us to being overwhelmed which inevitably results in us giving up. The key to substantial change is incremental change i.e. measurable. This blog will unite all the aspects of person's life and how to attain a balance and a sense of worth.</p>
+            <p>This blog will focus on 5 central themes; **Fitness**, **Diet**, **Well-being**, **Conscientiousness** & the **Environment**. Those themes are divided between the self and the external, which shows how interconnected we all are. They will sit under the philosophy of this site.</p>
+        </div>
+    </main>
+
+    <footer class="bg-white border-t">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-gray-600">
+            <p>&copy; 2024 The Conscientious Life. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
