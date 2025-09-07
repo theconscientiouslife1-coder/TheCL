@@ -1,0 +1,120 @@
+The Article Template
+
+Here is a simplified version of a single article page. You can duplicate this file and replace the placeholder text with your actual article content.
+
+I have created a new page that uses a single-column layout for easy reading. The content from your article can be placed in the <div class="prose"> block. The prose class from Tailwind's Typography plugin (which I've added) automatically formats your text to be clean and readable, like a book.
+-----------------
+
+
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title - The Conscientious Life</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for the font */
+        body {
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .flex-grow {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-3 border-b border-gray-200">
+                <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-600">
+                    <a href="#" class="hover:text-teal-600 transition-colors">About</a>
+                    <a href="#" class="hover:text-teal-600 transition-colors">Blog</a>
+                    <a href="#" class="hover:text-teal-600 transition-colors">Contact</a>
+                    <a href="#" class="hover:text-teal-600 transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-teal-600 transition-colors">Resources</a>
+                </nav>
+                <div class="relative">
+                    <input type="text" placeholder="Search..." class="border rounded-md py-1.5 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition">
+                    <svg class="w-4 h-4 absolute right-3 top-1/2 -translate-y-1/2 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-gray-800">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+             <div id="mobile-menu" class="hidden md:hidden py-2">
+                <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">About</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">Blog</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">Contact</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">Privacy Policy</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">Resources</a>
+            </div>
+
+            <div class="py-8 border-t border-gray-200">
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6">
+                    <a href="#" class="block bg-white p-6 text-center rounded-lg shadow-sm hover:shadow-lg hover:bg-teal-500 hover:text-white font-medium text-gray-700 transition-all duration-300">Overview</a>
+                    <a href="#" class="block bg-white p-6 text-center rounded-lg shadow-sm hover:shadow-lg hover:bg-teal-500 hover:text-white font-medium text-gray-700 transition-all duration-300">Diet</a>
+                    <a href="#" class="block bg-white p-6 text-center rounded-lg shadow-sm hover:shadow-lg hover:bg-teal-500 hover:text-white font-medium text-gray-700 transition-all duration-300">Fitness</a>
+                    <a href="#" class="block bg-teal-600 text-white p-6 text-center rounded-lg shadow-lg font-medium transition-all duration-300">Well-being</a>
+                    <a href="#" class="block bg-white p-6 text-center rounded-lg shadow-sm hover:shadow-lg hover:bg-teal-500 hover:text-white font-medium text-gray-700 transition-all duration-300">Environment</a>
+                    <a href="#" class="block bg-white p-6 text-center rounded-lg shadow-sm hover:shadow-lg hover:bg-teal-500 hover:text-white font-medium text-gray-700 transition-all duration-300">Conscientiousness</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="bg-white rounded-lg shadow-lg p-8 md:p-12">
+            <div class="text-center mb-8">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-2">Finding Inner Calm in a Chaotic World</h1>
+                <p class="text-gray-600 text-sm">Published on August 20, 2025 by John Doe</p>
+            </div>
+            <img src="https://via.placeholder.com/1200x600" alt="Placeholder image for the article" class="w-full h-auto object-cover rounded-lg mb-8">
+
+            <div class="prose max-w-none prose-teal text-gray-700">
+                <p>There is no cold turkey scenario being suggested. It is fundamental that the change is in an incremental manner. We are well aware of the various diet trends that prescribe to. Here it advocates 3 meals a day diet. It would be prudent to look to the first meal of the day where changes can be made.</p>
+                <p>This section is where you would paste the full text of your article. Tailwind's `prose` class will automatically style your headings, paragraphs, and lists to make them highly readable.</p>
+                <p>For example, a heading would look like this:</p>
+                <h2>Sub-heading</h2>
+                <p>And a list would look like this:</p>
+                <ul>
+                    <li>List item one</li>
+                    <li>List item two</li>
+                    <li>List item three</li>
+                </ul>
+                <p>You can simply copy your article's content and paste it into this `div` to format it automatically.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white border-t">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-gray-600">
+            <p>&copy; 2024 The Conscientious Life. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
