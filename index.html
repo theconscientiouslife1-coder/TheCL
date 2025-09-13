@@ -1,217 +1,222 @@
+
+HTML
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Conscientious Life - A Well-being Blog</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        /* Custom styles for the font and layout */
-        body {
-            font-family: 'Inter', sans-serif;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        .flex-grow {
-            flex-grow: 1;
-        }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Conscientious Life - A Well-being Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for the font and layout */
+        body {
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .flex-grow {
+            flex-grow: 1;
+        }
 
-        /* Keyframe for the slide-up animation */
-        @keyframes slide-up-and-fade {
-            0% {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        .slide-up {
-            animation: slide-up-and-fade 0.8s ease-out forwards;
-        }
+        /* Keyframe for the slide-up animation */
+        @keyframes slide-up-and-fade {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .slide-up {
+            animation: slide-up-and-fade 0.8s ease-out forwards;
+        }
 
-        /* New CSS for the symmetrical mobile grid */
-        @media (max-width: 639px) {
-            .mobile-grid-container {
-                /* Force a 2-column grid on small screens */
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-            }
-            /* Make the fifth item span both columns to center it */
-            .mobile-grid-container > :nth-child(5) {
-                grid-column: span 2 / span 2;
-                justify-self: center; /* Ensures horizontal centering */
-            }
-        }
-    </style>
+        /* New CSS for the symmetrical mobile grid */
+        @media (max-width: 639px) {
+            .mobile-grid-container {
+                /* Force a 2-column grid on small screens */
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+            /* Make the fifth item span both columns to center it */
+            .mobile-grid-container > :nth-child(5) {
+                grid-column: span 2 / span 2;
+                justify-self: center; /* Ensures horizontal centering */
+            }
+        }
+    </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-    <header id="main-header" class="bg-white shadow-sm">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center py-3 border-b border-gray-200">
-                <a href="index.html" class="flex items-center space-x-2 text-gray-800">
-                    <span class="text-xl md:text-2xl font-bold text-teal-600">Δ</span>
-                    <span class="text-lg md:text-xl font-medium tracking-tight">The Conscientious Life</span>
-                </a>
+    <header id="main-header" class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-3 border-b border-gray-200">
+                <a href="index.html" class="flex items-center space-x-2 text-gray-800">
+                    <span class="text-xl md:text-2xl font-bold text-teal-600">Δ</span>
+                    <span class="text-lg md:text-xl font-medium tracking-tight">The Conscientious Life</span>
+                </a>
 
-                <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-600">
-                    <a href="about.html" class="hover:text-teal-600 transition-colors">About</a>
-                    <a href="#" class="hover:text-teal-600 transition-colors">Blog</a>
-                    <a href="#" class="hover:text-teal-600 transition-colors">Contact</a>
-                    <a href="#" class="hover:text-teal-600 transition-colors">Privacy Policy</a>
-                    <a href="#" class="hover:text-teal-600 transition-colors">Resources</a>
-                </nav>
-                <div class="relative hidden md:block">
-                    <input type="text" placeholder="Search..." class="border rounded-md py-1.5 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition">
-                    <svg class="w-4 h-4 absolute right-3 top-1/2 -translate-y-1/2 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
-                </div>
+                <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-600">
+                    <a href="about.html" class="hover:text-teal-600 transition-colors">About</a>
+                    <a href="#" class="hover:text-teal-600 transition-colors">Blog</a>
+                    <a href="#" class="hover:text-teal-600 transition-colors">Contact</a>
+                    <a href="#" class="hover:text-teal-600 transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-teal-600 transition-colors">Resources</a>
+                </nav>
+                <div class="relative hidden md:block">
+                    <input type="text" placeholder="Search..." class="border rounded-md py-1.5 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition">
+                    <svg class="w-4 h-4 absolute right-3 top-1/2 -translate-y-1/2 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
 
-                <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-gray-600 hover:text-gray-800">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-                    </button>
-                </div>
-            </div>
-            
-            <div id="mobile-menu" class="hidden md:hidden py-2">
-                <a href="about.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">About</a>
-                <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">Blog</a>
-                <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">Contact</a>
-                <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">Privacy Policy</a>
-                <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">Resources</a>
-            </div>
-        </div>
-    </header>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-gray-800">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+            
+            <div id="mobile-menu" class="hidden md:hidden py-2">
+                <a href="about.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">About</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">Blog</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">Contact</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">Privacy Policy</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">Resources</a>
+            </div>
+        </div>
+    </header>
 
-    <main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-16">
 
-        <section class="py-8 border-t border-gray-200 opacity-0 animate-on-scroll">
-            <h3 class="text-2xl md:text-3xl font-semibold text-center text-gray-800 mb-8">The Conscientious Life Categories</h3>
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 mobile-grid-container">
-                
-                <a href="#" class="flex flex-col items-center justify-center p-6 text-center rounded-lg shadow-sm hover:shadow-lg hover:bg-teal-500 hover:text-white font-medium text-gray-700 transition-all duration-300 transform translate-y-0 hover:-translate-y-1">
-                    <svg class="h-8 w-8 mb-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10m-4 0h4m-4 0a4 4 0 004 4h4m-4-4a4 4 0 014-4h4m-4 4v10m-4-4h4m-4 0a4 4 0 004 4h4m-4-4a4 4 0 014-4h4" />
-                    </svg>
-                    <span>Well-being</span>
-                </a>
+                <section class="py-8 border-t border-gray-200 opacity-0 animate-on-scroll">
+            <h3 class="text-2xl md:text-3xl font-semibold text-center text-gray-800 mb-8">The Conscientious Life Categories</h3>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 mobile-grid-container">
+                
+                <a href="#" class="flex flex-col items-center justify-center p-6 text-center rounded-lg shadow-sm hover:shadow-lg hover:bg-teal-500 hover:text-white font-medium text-gray-700 transition-all duration-300 transform translate-y-0 hover:-translate-y-1">
+                    <svg class="h-8 w-8 mb-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10m-4 0h4m-4 0a4 4 0 004 4h4m-4-4a4 4 0 014-4h4m-4 4v10m-4-4h4m-4 0a4 4 0 004 4h4m-4-4a4 4 0 014-4h4" />
+                    </svg>
+                    <span>Well-being</span>
+                </a>
 
-                <a href="#" class="flex flex-col items-center justify-center p-6 text-center rounded-lg shadow-sm hover:shadow-lg hover:bg-teal-500 hover:text-white font-medium text-gray-700 transition-all duration-300 transform translate-y-0 hover:-translate-y-1">
-                    <svg class="h-8 w-8 mb-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.5c0 1.25-1 2.25-2.25 2.25H16a2 2 0 01-2-2V8m0 0a2 2 0 00-2-2H8c-1.25 0-2.25 1-2.25 2.25m0 0v-4.5h-2.5v4.5m4.75 0V8m0 0a2 2 0 01-2-2H8c-1.25 0-2.25 1-2.25 2.25m4.75 0V8m0 0a2 2 0 00-2-2H8c-1.25 0-2.25 1-2.25 2.25m4.75 0V8" />
-                    </svg>
-                    <span>Fitness</span>
-                </a>
+                <a href="#" class="flex flex-col items-center justify-center p-6 text-center rounded-lg shadow-sm hover:shadow-lg hover:bg-teal-500 hover:text-white font-medium text-gray-700 transition-all duration-300 transform translate-y-0 hover:-translate-y-1">
+                    <svg class="h-8 w-8 mb-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.5c0 1.25-1 2.25-2.25 2.25H16a2 2 0 01-2-2V8m0 0a2 2 0 00-2-2H8c-1.25 0-2.25 1-2.25 2.25m0 0v-4.5h-2.5v4.5m4.75 0V8m0 0a2 2 0 01-2-2H8c-1.25 0-2.25 1-2.25 2.25m4.75 0V8m0 0a2 2 0 00-2-2H8c-1.25 0-2.25 1-2.25 2.25m4.75 0V8" />
+                    </svg>
+                    <span>Fitness</span>
+                </a>
 
-                <a href="#" class="flex flex-col items-center justify-center p-6 text-center rounded-lg shadow-sm hover:shadow-lg hover:bg-teal-500 hover:text-white font-medium text-gray-700 transition-all duration-300 transform translate-y-0 hover:-translate-y-1">
-                    <svg class="h-8 w-8 mb-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                    <span>Diet</span>
-                </a>
+                <a href="#" class="flex flex-col items-center justify-center p-6 text-center rounded-lg shadow-sm hover:shadow-lg hover:bg-teal-500 hover:text-white font-medium text-gray-700 transition-all duration-300 transform translate-y-0 hover:-translate-y-1">
+                    <svg class="h-8 w-8 mb-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                    <span>Diet</span>
+                </a>
 
-                <a href="#" class="flex flex-col items-center justify-center p-6 text-center rounded-lg shadow-sm hover:shadow-lg hover:bg-teal-500 hover:text-white font-medium text-gray-700 transition-all duration-300 transform translate-y-0 hover:-translate-y-1">
-                    <svg class="h-8 w-8 mb-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m4 4v10m0-10h8m-8 0L4 7m4 4v10m8-10h8m-8 0L4 7" />
-                    </svg>
-                    <span>Environment</span>
-                </a>
-                
-                <a href="#" class="flex flex-col items-center justify-center p-6 text-center rounded-lg shadow-sm hover:shadow-lg hover:bg-teal-500 hover:text-white font-medium text-gray-700 transition-all duration-300 transform translate-y-0 hover:-translate-y-1">
-                    <svg class="h-8 w-8 mb-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.111a.225.225 0 01.29 0l.542.542a.225.225 0 010 .29L16.4 13.59a.225.225 0 01-.29 0L15.6 13a.225.225 0 010-.29l.542-.542a.225.225 0 01.29 0l.542.542a.225.225 0 010 .29L19.2 16.59a.225.225 0 01-.29 0L18.4 16a.225.225 0 010-.29l.542-.542a.225.225 0 01.29 0l.542.542a.225.225 0 010 .29L22.4 19.59a.225.225 0 01-.29 0L21.6 19a.225.225 0 010-.29l.542-.542a.225.225 0 01.29 0l.542.542a.225.225 0 010 .29L25.6 22.59a.225.225 0 01-.29 0L24.8 22a.225.225 0 010-.29l.542-.542a.225.225 0 01.29 0z" />
-                    </svg>
-                    <span>Conscientiousness</span>
-                </a>
-            </div>
-        </section>
+                <a href="#" class="flex flex-col items-center justify-center p-6 text-center rounded-lg shadow-sm hover:shadow-lg hover:bg-teal-500 hover:text-white font-medium text-gray-700 transition-all duration-300 transform translate-y-0 hover:-translate-y-1">
+                    <svg class="h-8 w-8 mb-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m4 4v10m0-10h8m-8 0L4 7m4 4v10m8-10h8m-8 0L4 7" />
+                    </svg>
+                    <span>Environment</span>
+                </a>
+                
+                <a href="#" class="flex flex-col items-center justify-center p-6 text-center rounded-lg shadow-sm hover:shadow-lg hover:bg-teal-500 hover:text-white font-medium text-gray-700 transition-all duration-300 transform translate-y-0 hover:-translate-y-1">
+                    <svg class="h-8 w-8 mb-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.111a.225.225 0 01.29 0l.542.542a.225.225 0 010 .29L16.4 13.59a.225.225 0 01-.29 0L15.6 13a.225.225 0 010-.29l.542-.542a.225.225 0 01.29 0l.542.542a.225.225 0 010 .29L19.2 16.59a.225.225 0 01-.29 0L18.4 16a.225.225 0 010-.29l.542-.542a.225.225 0 01.29 0l.542.542a.225.225 0 010 .29L22.4 19.59a.225.225 0 01-.29 0L21.6 19a.225.225 0 010-.29l.542-.542a.225.225 0 01.29 0l.542.542a.225.225 0 010 .29L25.6 22.59a.225.225 0 01-.29 0L24.8 22a.225.225 0 010-.29l.542-.542a.225.225 0 01.29 0z" />
+                    </svg>
+                    <span>Conscientiousness</span>
+                </a>
 
-        <section class="text-center my-16 opacity-0 animate-on-scroll">
-            <a href="#" class="inline-block bg-teal-600 text-white font-medium py-3 px-8 rounded-full shadow-lg hover:bg-teal-700 transition-colors duration-300">
-                Discover Your Path
-            </a>
-        </section>
+            </div>
+        </section>
 
-        <section class="text-center max-w-4xl mx-auto mb-16 opacity-0 animate-on-scroll">
-            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">Finding clarity in a world of noise.</h2>
-            <p class="text-lg text-gray-600 mb-8">
-                The Conscientious Life is a blog for those seeking genuine well-being from a humanist perspective. We explore how to reconnect with your true self and find balance in a world that often pulls us away from what truly matters.
-            </p>
-            
-            <div class="space-y-6 md:space-y-0 md:flex md:space-x-8 text-left md:text-center">
-                <div class="flex-1">
-                    <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-3">Escaping the Leaky Jar</h3>
-                    <p class="text-gray-600">
-                        In a world driven by fleeting desires and digital distractions, we feel more isolated than ever. Our goal is to help you lift the veil of external pressures—from technology to consumerism—to discover lasting fulfillment.
-                    </p>
-                </div>
-                <div class="flex-1">
-                    <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-3">Embracing Incremental Change</h3>
-                    <p class="text-gray-600">
-                        True, lasting transformation comes from small, measurable steps. Our philosophy is to unify all aspects of your life through key themes—Fitness, Diet, Well-being, Conscientiousness, and the Environment—to help you attain a balanced and meaningful life.
-                    </p>
-                </div>
-            </div>
-        </section>
+        <section class="text-center my-16 opacity-0 animate-on-scroll">
+            <a href="#" class="inline-block bg-teal-600 text-white font-medium py-3 px-8 rounded-full shadow-lg hover:bg-teal-700 transition-colors duration-300">
+                Discover Your Path
+            </a>
+        </section>
 
-    </main>
+        <section class="text-center max-w-4xl mx-auto mb-16 opacity-0 animate-on-scroll">
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">Finding clarity in a world of noise.</h2>
+            <p class="text-lg text-gray-600 mb-8">
+                The Conscientious Life is a blog for those seeking genuine well-being from a humanist perspective. We explore how to reconnect with your true self and find balance in a world that often pulls us away from what truly matters.
+            </p>
+            
+            <div class="space-y-6 md:space-y-0 md:flex md:space-x-8 text-left md:text-center">
+                <div class="flex-1">
+                    <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-3">Escaping the Leaky Jar</h3>
+                    <p class="text-gray-600">
+                        In a world driven by fleeting desires and digital distractions, we feel more isolated than ever. Our goal is to help you lift the veil of external pressures—from technology to consumerism—to discover lasting fulfillment.
+                    </p>
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-3">Embracing Incremental Change</h3>
+                    <p class="text-gray-600">
+                        True, lasting transformation comes from small, measurable steps. Our philosophy is to unify all aspects of your life through key themes—Fitness, Diet, Well-being, Conscientiousness, and the Environment—to help you attain a balanced and meaningful life.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-    <footer class="bg-white border-t">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-gray-600">
-            <p>&copy; 2024 The Conscientious Life. All Rights Reserved.</p>
-        </div>
-    </footer>
+    </main>
 
-    <script>
-        // JavaScript for mobile menu and header
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
+    <footer class="bg-white border-t">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-gray-600">
+            <p>&copy; 2024 The Conscientious Life. All Rights Reserved.</p>
+        </div>
+    </footer>
 
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-        
-        // JavaScript for the sticky header effect
-        window.addEventListener('scroll', () => {
-            const header = document.getElementById('main-header');
-            if (window.scrollY > 50) {
-                header.classList.add('fixed', 'top-0', 'left-0', 'right-0', 'z-50', 'transition-all', 'duration-300', 'py-2');
-                header.classList.remove('py-3');
-            } else {
-                header.classList.remove('fixed', 'top-0', 'left-0', 'right-0', 'z-50', 'transition-all', 'duration-300', 'py-2');
-                header.classList.add('py-3');
-            }
-        });
+    <script>
+        // JavaScript for mobile menu and header
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
 
-        // JavaScript for the scroll animation
-        document.addEventListener('DOMContentLoaded', () => {
-            const observerOptions = {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.1
-            };
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // JavaScript for the sticky header effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('main-header');
+            if (window.scrollY > 50) {
+                header.classList.add('fixed', 'top-0', 'left-0', 'right-0', 'z-50', 'transition-all', 'duration-300', 'py-2');
+                header.classList.remove('py-3');
+            } else {
+                header.classList.remove('fixed', 'top-0', 'left-0', 'right-0', 'z-50', 'transition-all', 'duration-300', 'py-2');
+                header.classList.add('py-3');
+            }
+        });
 
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('slide-up');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, observerOptions);
+        // JavaScript for the scroll animation
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
 
-            document.querySelectorAll('.animate-on-scroll').forEach(section => {
-                observer.observe(section);
-            });
-        });
-    </script>
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('slide-up');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.animate-on-scroll').forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
 
 </body>
 </html>
+>>>>>>> 103505a34fa05829b3607f9583fad0861030f606
