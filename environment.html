@@ -20,7 +20,7 @@
             flex-grow: 1;
         }
 
-        /* Keyframe for the slide-up animation (THE MISSING AND CRITICAL FIX) */
+        /* Keyframe for the slide-up animation (RESTORED FIX) */
         @keyframes slide-up-and-fade {
             0% {
                 opacity: 0;
@@ -38,7 +38,8 @@
             opacity: 0;
         }
     </style>
-</head><body class="bg-gray-50 text-gray-800">
+</head>
+<body class="bg-gray-50 text-gray-800">
 
     <header class="bg-white shadow-sm">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -75,38 +76,49 @@
                 <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">Privacy Policy</a>
                 <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">Resources</a>
             </div>
+
+            <div class="py-8 border-t border-gray-200">
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6">
+                    <a href="index.html" class="block bg-white p-6 text-center rounded-lg shadow-sm hover:shadow-lg hover:bg-teal-500 hover:text-white font-medium text-gray-700 transition-all duration-300">Overview</a>
+                    <a href="diet.html" class="block bg-white p-6 text-center rounded-lg shadow-sm hover:shadow-lg hover:bg-teal-500 hover:text-white font-medium text-gray-700 transition-all duration-300">Diet</a>
+                    <a href="fitness.html" class="block bg-white p-6 text-center rounded-lg shadow-sm hover:shadow-lg hover:bg-teal-500 hover:text-white font-medium text-gray-700 transition-all duration-300">Fitness</a>
+                    <a href="well-being.html" class="block bg-white p-6 text-center rounded-lg shadow-sm hover:shadow-lg hover:bg-teal-500 hover:text-white font-medium text-gray-700 transition-all duration-300">Well-being</a>
+                    <a href="environment.html" class="block bg-teal-600 text-white p-6 text-center rounded-lg shadow-lg font-medium transition-all duration-300">Environment</a>
+                    <a href="conscientiousness.html" class="block bg-white p-6 text-center rounded-lg shadow-sm hover:shadow-lg hover:bg-teal-500 hover:text-white font-medium text-gray-700 transition-all duration-300">Conscientiousness</a>
+                </div>
+            </div>
         </div>
     </header>
 
     <main class="flex-grow">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16">
             <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-8 text-center border-b pb-4 border-teal-500">
-                Environment: Articles on Sustainable Living
+                Environment: Articles on Sustainability and Nature
             </h1>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
                 <div class="md:col-span-2 space-y-8">
 
                     <article class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row animate-on-scroll opacity-0">
-                        <img src="https://via.placeholder.com/300x200" alt="Zero Waste" class="w-full md:w-1/3 h-48 md:h-auto object-cover">
+                        <img src="https://via.placeholder.com/300x200" alt="Nature Walk" class="w-full md:w-1/3 h-48 md:h-auto object-cover">
                         <div class="p-6 flex flex-col justify-between w-full">
                             <div>
-                                <h2 class="text-2xl font-bold text-gray-900 mb-2">The Zero-Waste Starter Kit: Simple Steps for Sustainable Living</h2>
-                                <p class="text-gray-600 mb-4">You don't need to be perfect to make a difference. Start your journey toward a zero-waste lifestyle with these five simple, low-cost swaps.</p>
+                                <h2 class="text-2xl font-bold text-gray-900 mb-2">The Simple Power of Nature: Why Your Mental Health Needs a Walk Outside</h2>
+                                <p class="text-gray-600 mb-4">Reconnecting with nature is a cornerstone of a conscientious life. Learn the physical and psychological benefits of prioritizing time outdoors.</p>
                             </div>
                             <div class="flex justify-between items-center text-sm text-gray-500">
-                                <span>Sustainability | Alex P.</span>
+                                <span>Outdoors | Alex P.</span>
                                 <a href="article-template.html" class="text-teal-600 hover:text-teal-700 font-medium transition-colors">Read More &rarr;</a>
                             </div>
                         </div>
                     </article>
 
                     <article class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row animate-on-scroll opacity-0">
-                        <img src="https://via.placeholder.com/300x200" alt="Nature" class="w-full md:w-1/3 h-48 md:h-auto object-cover">
+                        <img src="https://via.placeholder.com/300x200" alt="Sustainability" class="w-full md:w-1/3 h-48 md:h-auto object-cover">
                         <div class="p-6 flex flex-col justify-between w-full">
                             <div>
-                                <h2 class="text-2xl font-bold text-gray-900 mb-2">Reconnecting with the Wild: Why Nature is Essential for Well-being</h2>
-                                <p class="text-gray-600 mb-4">It's not just about saving the planet—it's about saving ourselves. Explore the profound mental and physical benefits of spending more time in nature.</p>
+                                <h2 class="text-2xl font-bold text-gray-900 mb-2">Your Home, Your Planet: Practical Steps Towards Sustainable Living</h2>
+                                <p class="text-gray-600 mb-4">From reducing plastic to lowering energy consumption, discover achievable, incremental changes you can make today for a more sustainable household.</p>
                             </div>
                             <div class="flex justify-between items-center text-sm text-gray-500">
                                 <span>Ecology | S. Johnson</span>
@@ -116,67 +128,4 @@
                     </article>
 
                     <div class="flex justify-center space-x-2 pt-6">
-                        <a href="#" class="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-100">Previous</a>
-                        <a href="#" class="px-4 py-2 text-sm font-medium text-white bg-teal-600 border border-teal-600 rounded-md shadow-sm">1</a>
-                        <a href="#" class="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-100">2</a>
-                        <a href="#" class="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-100">Next</a>
-                    </div>
-                </div>
-
-                <aside class="space-y-8">
-                    
-                    <div class="bg-white rounded-lg shadow-lg p-6">
-                        <h4 class="text-xl font-semibold text-gray-700 mb-4 border-b pb-2">Popular Environment Articles</h4>
-                        <ul class="space-y-3 list-disc list-inside">
-                            <li><a href="article-template.html" class="text-gray-600 hover:text-teal-600 transition-colors">Why Sleep is the Most Important Factor in Health</a></li>
-                            <li><a href="article-template.html" class="text-gray-600 hover:text-teal-600 transition-colors">Five Hobbies That Seriously Boost Your Mood</a></li>
-                            <li><a href="article-template.html" class="text-gray-600 hover:text-teal-600 transition-colors">Simple Yoga Poses for Daily Rejuvenation</a></li>
-                            <li><a href="environment-article-1.html" class="text-gray-600 hover:text-teal-600 transition-colors">How Nature Walks Improve Your Mood</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="bg-white rounded-lg shadow-lg p-6 text-center">
-                        <h4 class="text-xl font-semibold text-gray-700 mb-4">About the Author</h4>
-                        <img src="https://via.placeholder.com/150" alt="Author photo" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
-                        <p class="text-gray-700">Hi, I'm Alex! I created this blog to share my journey toward a more conscientious life. I believe small changes can lead to a healthier, happier you.</p>
-                    </div>
-                </aside>
-            </div>
-        </div>
-    </main>
-
-    <footer class="bg-white border-t">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-gray-600">
-            <p>&copy; 2024 The Conscientious Life. All Rights Reserved.</p>
-        </div>
-    </footer>
-
-    <script>
-        // JavaScript for mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Animation for sections that scroll into view
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('slide-up');
-                    entry.target.classList.remove('opacity-0');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, {
-            threshold: 0.1 // Trigger when 10% of the element is visible
-        });
-
-        document.querySelectorAll('.animate-on-scroll').forEach(section => {
-            observer.observe(section);
-        });
-    </script>
-
-</body>
-</html>
+                        <a href="#" class="px-4 py-2 text-sm font-medium text

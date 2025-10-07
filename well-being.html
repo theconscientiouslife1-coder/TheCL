@@ -20,7 +20,7 @@
             flex-grow: 1;
         }
 
-        /* Keyframe for the slide-up animation (THE MISSING AND CRITICAL FIX) */
+        /* Keyframe for the slide-up animation (RESTORED FIX) */
         @keyframes slide-up-and-fade {
             0% {
                 opacity: 0;
@@ -76,13 +76,24 @@
                 <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">Privacy Policy</a>
                 <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">Resources</a>
             </div>
+
+            <div class="py-8 border-t border-gray-200">
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6">
+                    <a href="index.html" class="block bg-white p-6 text-center rounded-lg shadow-sm hover:shadow-lg hover:bg-teal-500 hover:text-white font-medium text-gray-700 transition-all duration-300">Overview</a>
+                    <a href="diet.html" class="block bg-white p-6 text-center rounded-lg shadow-sm hover:shadow-lg hover:bg-teal-500 hover:text-white font-medium text-gray-700 transition-all duration-300">Diet</a>
+                    <a href="fitness.html" class="block bg-white p-6 text-center rounded-lg shadow-sm hover:shadow-lg hover:bg-teal-500 hover:text-white font-medium text-gray-700 transition-all duration-300">Fitness</a>
+                    <a href="well-being.html" class="block bg-teal-600 text-white p-6 text-center rounded-lg shadow-lg font-medium transition-all duration-300">Well-being</a>
+                    <a href="environment.html" class="block bg-white p-6 text-center rounded-lg shadow-sm hover:shadow-lg hover:bg-teal-500 hover:text-white font-medium text-gray-700 transition-all duration-300">Environment</a>
+                    <a href="conscientiousness.html" class="block bg-white p-6 text-center rounded-lg shadow-sm hover:shadow-lg hover:bg-teal-500 hover:text-white font-medium text-gray-700 transition-all duration-300">Conscientiousness</a>
+                </div>
+            </div>
         </div>
     </header>
 
     <main class="flex-grow">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16">
             <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-8 text-center border-b pb-4 border-teal-500">
-                Well-being: Articles for a Balanced Life
+                Well-being: Articles on Inner Peace and Mental Health
             </h1>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -92,25 +103,25 @@
                         <img src="https://via.placeholder.com/300x200" alt="Mindfulness" class="w-full md:w-1/3 h-48 md:h-auto object-cover">
                         <div class="p-6 flex flex-col justify-between w-full">
                             <div>
-                                <h2 class="text-2xl font-bold text-gray-900 mb-2">The Power of 10 Minutes: Daily Mindfulness Practice</h2>
-                                <p class="text-gray-600 mb-4">Learn how a simple 10-minute mindfulness session can reduce stress, improve focus, and enhance your overall well-being. Start your journey to inner peace today.</p>
+                                <h2 class="text-2xl font-bold text-gray-900 mb-2">Finding Inner Calm in a Chaotic World</h2>
+                                <p class="text-gray-600 mb-4">Discover simple, effective techniques to manage stress and cultivate a sense of peace. From mindfulness to meditation, learn how to create a sanctuary within yourself.</p>
                             </div>
                             <div class="flex justify-between items-center text-sm text-gray-500">
-                                <span>Wellness | Alex P.</span>
+                                <span>Mental Health | Alex P.</span>
                                 <a href="article-template.html" class="text-teal-600 hover:text-teal-700 font-medium transition-colors">Read More &rarr;</a>
                             </div>
                         </div>
                     </article>
 
                     <article class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row animate-on-scroll opacity-0">
-                        <img src="https://via.placeholder.com/300x200" alt="Digital Detox" class="w-full md:w-1/3 h-48 md:h-auto object-cover">
+                        <img src="https://via.placeholder.com/300x200" alt="Sleep" class="w-full md:w-1/3 h-48 md:h-auto object-cover">
                         <div class="p-6 flex flex-col justify-between w-full">
                             <div>
-                                <h2 class="text-2xl font-bold text-gray-900 mb-2">Unplugging for Happiness: A Simple Digital Detox Guide</h2>
-                                <p class="text-gray-600 mb-4">Our screens are draining our attention and happiness. Follow this step-by-step guide to successfully detox from technology and reconnect with the real world.</p>
+                                <h2 class="text-2xl font-bold text-gray-900 mb-2">The Unspoken Power of Rest: Your Guide to Better Sleep</h2>
+                                <p class="text-gray-600 mb-4">Quality sleep is the foundation of well-being. Learn about evening routines, environment adjustments, and habits that guarantee a good night's rest.</p>
                             </div>
                             <div class="flex justify-between items-center text-sm text-gray-500">
-                                <span>Mental Health | S. Johnson</span>
+                                <span>Rest | S. Johnson</span>
                                 <a href="article-template.html" class="text-teal-600 hover:text-teal-700 font-medium transition-colors">Read More &rarr;</a>
                             </div>
                         </div>
@@ -129,10 +140,10 @@
                     <div class="bg-white rounded-lg shadow-lg p-6">
                         <h4 class="text-xl font-semibold text-gray-700 mb-4 border-b pb-2">Popular Well-being Articles</h4>
                         <ul class="space-y-3 list-disc list-inside">
-                            <li><a href="article-template.html" class="text-gray-600 hover:text-teal-600 transition-colors">Why Sleep is the Most Important Factor in Health</a></li>
                             <li><a href="article-template.html" class="text-gray-600 hover:text-teal-600 transition-colors">Five Hobbies That Seriously Boost Your Mood</a></li>
-                            <li><a href="article-template.html" class="text-gray-600 hover:text-teal-600 transition-colors">Simple Yoga Poses for Daily Rejuvenation</a></li>
-                            <li><a href="environment-article-1.html" class="text-gray-600 hover:text-teal-600 transition-colors">How Nature Walks Improve Your Mood</a></li>
+                            <li><a href="article-template.html" class="text-gray-600 hover:text-teal-600 transition-colors">The Benefits of Journaling for Clarity</a></li>
+                            <li><a href="article-template.html" class="text-gray-600 hover:text-teal-600 transition-colors">How to Set Healthy Digital Boundaries</a></li>
+                            <li><a href="environment-article-1.html" class="text-gray-600 hover:text-teal-600 transition-colors">Using Scents for Relaxation and Focus</a></li>
                         </ul>
                     </div>
 
@@ -161,7 +172,7 @@
             mobileMenu.classList.toggle('hidden');
         });
 
-        // Animation for sections that scroll into view
+        // Animation for sections that scroll into view (RESTORED FIX)
         const observer = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {

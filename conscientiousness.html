@@ -20,7 +20,7 @@
             flex-grow: 1;
         }
 
-        /* Keyframe for the slide-up animation (THE MISSING AND CRITICAL FIX) */
+        /* Keyframe for the slide-up animation (RESTORED FIX) */
         @keyframes slide-up-and-fade {
             0% {
                 opacity: 0;
@@ -75,6 +75,17 @@
                 <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">Contact</a>
                 <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">Privacy Policy</a>
                 <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">Resources</a>
+            </div>
+
+            <div class="py-8 border-t border-gray-200">
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6">
+                    <a href="index.html" class="block bg-white p-6 text-center rounded-lg shadow-sm hover:shadow-lg hover:bg-teal-500 hover:text-white font-medium text-gray-700 transition-all duration-300">Overview</a>
+                    <a href="diet.html" class="block bg-white p-6 text-center rounded-lg shadow-sm hover:shadow-lg hover:bg-teal-500 hover:text-white font-medium text-gray-700 transition-all duration-300">Diet</a>
+                    <a href="fitness.html" class="block bg-white p-6 text-center rounded-lg shadow-sm hover:shadow-lg hover:bg-teal-500 hover:text-white font-medium text-gray-700 transition-all duration-300">Fitness</a>
+                    <a href="well-being.html" class="block bg-white p-6 text-center rounded-lg shadow-sm hover:shadow-lg hover:bg-teal-500 hover:text-white font-medium text-gray-700 transition-all duration-300">Well-being</a>
+                    <a href="environment.html" class="block bg-white p-6 text-center rounded-lg shadow-sm hover:shadow-lg hover:bg-teal-500 hover:text-white font-medium text-gray-700 transition-all duration-300">Environment</a>
+                    <a href="conscientiousness.html" class="block bg-teal-600 text-white p-6 text-center rounded-lg shadow-lg font-medium transition-all duration-300">Conscientiousness</a>
+                </div>
             </div>
         </div>
     </header>
@@ -161,7 +172,7 @@
             mobileMenu.classList.toggle('hidden');
         });
 
-        // Animation for sections that scroll into view
+        // Animation for sections that scroll into view (RESTORED FIX)
         const observer = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
