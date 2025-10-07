@@ -81,14 +81,32 @@ HTML
         </div>
     </footer>
 
-    <script>
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
+<script>
+    // JavaScript for mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
 
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+    mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    // Animation for sections that scroll into view (THIS IS THE MISSING PIECE)
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('slide-up');
+                entry.target.classList.remove('opacity-0');
+                observer.unobserve(entry.target);
+            }
         });
-    </script>
+    }, {
+        threshold: 0.1 // Trigger when 10% of the element is visible
+    });
+
+    document.querySelectorAll('.animate-on-scroll').forEach(section => {
+        observer.observe(section);
+    });
+</script>
 
 </body>
 </html>
