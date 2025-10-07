@@ -1,2 +1,4 @@
 theme: null
-exclude: []
+include:
+  - "*.html"
+  - "*.json"
