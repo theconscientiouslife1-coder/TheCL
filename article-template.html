@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title - The Conscientious Life</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for the font and layout */
+        body {
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .flex-grow {
+            flex-grow: 1;
+        }
+
+        /* Styles for text content formatting (to match common blog reading experience) */
+        .article-content h2 {
+            font-size: 1.75rem; /* 28px */
+            font-weight: 700;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.25rem;
+            border-bottom: 1px solid #e5e7eb; /* gray-200 */
+        }
+        .article-content h3 {
+            font-size: 1.5rem; /* 24px */
+            font-weight: 600;
+            margin-top: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+        .article-content p {
+            line-height: 1.75;
+            margin-bottom: 1rem;
+        }
+        .article-content ul, .article-content ol {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+        }
+        .article-content ul {
+            list-style-type: disc;
+        }
+        .article-content ol {
+            list-style-type: decimal;
+        }
+        .article-content li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body class="bg-neutral-50 text-gray-800">
+
+    <header class="bg-neutral-100 shadow-sm">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-3 border-b border-gray-200">
+                 <a href="index.html" class="flex items-center space-x-2 text-gray-800">
+                    <span class="text-xl md:text-2xl font-bold text-sky-600">Δ</span>
+                    <span class="text-lg md:text-xl font-medium tracking-tight">The Conscientious Life</span>
+                </a>
+                
+                <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-600">
+                    <a href="about.html" class="hover:text-sky-600 transition-colors">About</a>
+                    <a href="#" class="hover:text-sky-600 transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-sky-600 transition-colors">Resources</a>
+                </nav>
+  
+                <div class="relative">
+                    <input type="text" placeholder="Search..." class="border rounded-md py-1.5 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition">
+                    <svg class="w-4 h-4 absolute right-3 top-1/2 -translate-y-1/2 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-gray-800">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden py-2">
+                <a href="about.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">About</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">Privacy Policy</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">Resources</a>
+            </div>
+
+            <div class="py-8 border-t border-gray-200">
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6">
+                    <a href="index.html" class="block bg-white p-6 text-center rounded-lg shadow-sm hover:shadow-lg hover:bg-sky-500 hover:text-white font-medium text-gray-700 transition-all duration-300">Overview</a>
+                    <a href="diet.html" class="block bg-white p-6 text-center rounded-lg shadow-sm hover:shadow-lg hover:bg-sky-500 hover:text-white font-medium text-gray-700 transition-all duration-300">Diet</a>
+                    <a href="fitness.html" class="block bg-white p-6 text-center rounded-lg shadow-sm hover:shadow-lg hover:bg-sky-500 hover:text-white font-medium text-gray-700 transition-all duration-300">Fitness</a>
+                    <a href="well-being.html" class="block bg-sky-600 text-white p-6 text-center rounded-lg shadow-lg font-medium transition-all duration-300">Well-being</a> 
+                    <a href="environment.html" class="block bg-white p-6 text-center rounded-lg shadow-sm hover:shadow-lg hover:bg-sky-500 hover:text-white font-medium text-gray-700 transition-all duration-300">Environment</a>
+                    <a href="conscientiousness.html" class="block bg-white p-6 text-center rounded-lg shadow-sm hover:shadow-lg hover:bg-sky-500 hover:text-white font-medium text-gray-700 transition-all duration-300">Conscientiousness</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <article class="md:col-span-2 bg-white rounded-lg shadow-xl p-6 lg:p-10">
+                    
+                    <span class="text-sm font-semibold text-sky-600 uppercase tracking-wider">CATEGORY NAME</span>
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 mt-2 mb-4">
+                        The Full Title of Your Article Goes Here
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-6 border-b pb-4">
+                        A concise and compelling summary or subtitle that introduces the main topic of the article.
+                    </p>
+
+                    <div class="flex items-center space-x-4 text-sm text-gray-500 mb-8">
+                        <div class="flex items-center space-x-2">
+                            <img src="https://via.placeholder.com/30" alt="Author" class="w-7 h-7 rounded-full object-cover">
+                            <span class="font-medium text-gray-700">By Alex P.</span>
+                        </div>
+                        <span>&middot;</span>
+                        <span>October 14, 2024</span>
+                        <span>&middot;</span>
+                        <span>7 min read</span>
+                    </div>
+
+                    <img src="https://via.placeholder.com/800x450" alt="Featured image for the article" class="w-full h-auto rounded-lg mb-10 shadow-lg object-cover">
+
+                    <div class="text-gray-700 article-content">
+                        
+                        <p>This is the introductory paragraph where you set the stage for your reader. Make it engaging and clearly state the problem or idea you will be exploring in the rest of the article. Use this space to connect with your audience and draw them in.</p>
+
+                        <h2>Section Heading 1: Understanding the Core Concept</h2>
+                        
+                        <p>Begin the first main section of your content. You can explain the 'why' behind the topic. This text provides detailed information, using clear and concise language to explain complex ideas simply. Remember, a conscientious life is built on knowledge.</p>
+                        
+                        <ul>
+                            <li>**Key Takeaway 1:** Use bullet points to break up large chunks of text and highlight critical steps or facts.</li>
+                            <li>**Key Takeaway 2:** This makes the content scannable and easier for readers to absorb quickly.</li>
+                            <li>**Key Takeaway 3:** Ensure each point is actionable or informative.</li>
+                        </ul>
+
+                        <h2>Section Heading 2: Practical Steps for Implementation</h2>
+
+                        <p>This section is dedicated to action. How can your reader apply this knowledge to their own life? Provide clear, step-by-step instructions or actionable tips that align with your overall theme of conscientious living. We recommend using an ordered list here.</p>
+
+                        <ol>
+                            <li>**Step One:** Start small. Conscientious change is about consistency, not intensity.</li>
+                            <li>**Step Two:** Track your progress. Awareness is a powerful motivator for long-term habits.</li>
+                            <li>**Step Three:** Find your community. Sharing your journey makes it sustainable and rewarding.</li>
+                        </ol>
+
+                        <h3>A Sub-Section Deep Dive</h3>
+
+                        <p>Use a smaller heading for a more focused discussion on a specific detail, case study, or tool related to the main section. This helps maintain a good content hierarchy while keeping the reader engaged with specific examples.</p>
+
+                        <p>The conclusion wraps up the entire discussion. Reiterate the main theme without introducing new ideas. Provide a final thought or call to reflection, encouraging the reader to apply what they've learned today.</p>
+
+                    </div>
+                    
+                </article>
+
+                <aside class="space-y-8">
+                    
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <h4 class="text-xl font-semibold text-gray-700 mb-4 border-b pb-2">More in [CATEGORY NAME]</h4>
+                        <ul class="space-y-3 list-disc list-inside">
+                            <li><a href="article-template.html" class="text-gray-600 hover:text-sky-600 transition-colors">Related Article Title 1</a></li>
+                            <li><a href="article-template.html" class="text-gray-600 hover:text-sky-600 transition-colors">Related Article Title 2</a></li>
+                            <li><a href="article-template.html" class="text-gray-600 hover:text-sky-600 transition-colors">Related Article Title 3</a></li>
+                            <li><a href="article-template.html" class="text-gray-600 hover:text-sky-600 transition-colors">Related Article Title 4</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                        <h4 class="text-xl font-semibold text-gray-700 mb-4">About the Author</h4>
+                        <img src="https://via.placeholder.com/150" alt="Author photo" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+                        <p class="text-gray-700">Hi, I'm Alex! I created this blog to share my journey toward a more conscientious life. I believe small changes can lead to a healthier, happier you.</p>
+                        <a href="about.html" class="mt-4 inline-block text-sky-600 hover:text-sky-700 font-medium transition-colors">View All Posts &rarr;</a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-neutral-100 border-t">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-gray-600">
+            <p>&copy; 2024 The Conscientious Life. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>

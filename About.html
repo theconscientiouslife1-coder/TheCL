@@ -1,9 +1,3 @@
-ABOUT
-----------------
-
-
-HTML
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +9,7 @@ HTML
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        /* Custom styles for the font and layout */
         body {
             font-family: 'Inter', sans-serif;
             display: flex;
@@ -23,6 +18,24 @@ HTML
         }
         .flex-grow {
             flex-grow: 1;
+        }
+
+        /* Keyframe for the slide-up animation (RESTORED FIX) */
+        @keyframes slide-up-and-fade {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .slide-up {
+            animation: slide-up-and-fade 0.7s ease-out forwards;
+        }
+        .opacity-0 {
+            opacity: 0;
         }
     </style>
 </head>
@@ -37,7 +50,7 @@ HTML
                 </a>
                 <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-600">
                     <a href="about.html" class="hover:text-teal-600 transition-colors text-teal-600">About</a>
-                    <a href="#" class="hover:text-teal-600 transition-colors">Blog</a>
+                    <a href="index.html" class="hover:text-teal-600 transition-colors">Blog</a>
                     <a href="#" class="hover:text-teal-600 transition-colors">Contact</a>
                     <a href="#" class="hover:text-teal-600 transition-colors">Privacy Policy</a>
                     <a href="#" class="hover:text-teal-600 transition-colors">Resources</a>
@@ -56,7 +69,7 @@ HTML
             </div>
             <div id="mobile-menu" class="hidden md:hidden py-2">
                 <a href="about.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">About</a>
-                <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">Blog</a>
+                <a href="index.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">Blog</a>
                 <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">Contact</a>
                 <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">Privacy Policy</a>
                 <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">Resources</a>
@@ -66,7 +79,7 @@ HTML
 
     <main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <h1 class="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-8">Our Philosophy</h1>
-        <div class="max-w-4xl mx-auto space-y-6 text-lg text-gray-700 leading-relaxed">
+        <div class="max-w-4xl mx-auto space-y-6 text-lg text-gray-700 leading-relaxed animate-on-scroll opacity-0">
             <p>This blog is to provide a guide to assist people who feel overwhelmed by the modern world, who want to take control of their lives and make a difference while having a sense of balance as to who one truly is and being at one with their environment/world/externus.</p>
             <p>This is a non-denominational site (there is no belief system implied or being referenced), and what is written is from a humanist perspective. It is hoped that what is written can provide a semblance of hope and allow one to utilise what is conveyed and can be applied to one's everyday dealings in the most positive and proactive manner possible.</p>
             <p>In the age of Individualism, technology plays on the fears, preferences etc. which further isolates us and heightens those negative emotions further isolating us. This blog aims to assist people in lifting the veil (veil of maya) that restricts those from attaining their true self and see how that perpetuates into society. We as human beings are feeling like the true definition of who we are is defined by our status, consumption habits, wealth etc. those of physical/finite manner, which are temporary and something that never fulfils as humans. These desires are from without, never being satisfied as Socrates mentioned "unfettered desires are like a leaky jar, it can never be filled." From the use of technology to the ever burgeoning urbanisation of society, we are losing the experience of viewing nature and from this our every day experience is dulled, to such an extent, that we are no longer living in the moment and enjoying and relishing the fact we are alive but rather direct our attention to the next experience that requires us to escape from the moments we live in. As the algorithms continue to enforce our world views and keep us hooked on what our virtual world is, we then strive for the experiences we see of those who have lavish lifestyles etc. and that is what we convince ourselves to endeavour for and that that will bring satisfaction etc.</p>
@@ -82,11 +95,29 @@ HTML
     </footer>
 
     <script>
+        // JavaScript for mobile menu toggle
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
 
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
+        });
+
+        // Animation for sections that scroll into view (RESTORED FIX)
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('slide-up');
+                    entry.target.classList.remove('opacity-0');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1 // Trigger when 10% of the element is visible
+        });
+
+        document.querySelectorAll('.animate-on-scroll').forEach(section => {
+            observer.observe(section);
         });
     </script>
 
