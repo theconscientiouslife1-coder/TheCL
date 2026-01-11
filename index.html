@@ -39,67 +39,70 @@
 </head>
 <body class="bg-neutral-50 text-gray-800">
 
-    <header id="main-header" class="bg-neutral-100 shadow-sm">
+    <header id="main-header" class="bg-white shadow-sm">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center py-3 border-b border-gray-200">
+            <div class="flex justify-between items-center py-4">
                 <a href="index.html" class="flex items-center space-x-2 text-gray-800">
-                    <span class="text-xl md:text-2xl font-bold text-sky-600">Δ</span>
+                    <span class="text-xl md:text-2xl font-bold text-[#14947c]">Δ</span>
                     <span class="text-lg md:text-xl font-medium tracking-tight">The Conscientious Life</span>
                 </a>
 
                 <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-600">
-                    <a href="about.html" class="hover:text-sky-600 transition-colors">About</a>
-                    <a href="#" class="hover:text-sky-600 transition-colors">Privacy Policy</a>
-                    <a href="#" class="hover:text-sky-600 transition-colors">Resources</a>
+                    <a href="about.html" class="hover:text-[#14947c] transition-colors">About</a>
+                    <a href="blog.html" class="hover:text-[#14947c] transition-colors text-[#14947c]">Blog</a>
+                    <a href="#" class="hover:text-[#14947c] transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-[#14947c] transition-colors">Resources</a>
                 </nav>
                 
                 <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-gray-600 hover:text-gray-800">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    <button id="mobile-menu-button" class="text-gray-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
                     </button>
                 </div>
             </div>
             
-            <div id="mobile-menu" class="hidden md:hidden py-2">
-                <a href="about.html" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">About</a>
-                <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">Privacy Policy</a>
-                <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100">Resources</a>
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="about.html" class="block py-2 text-gray-600">About</a>
+                <a href="blog.html" class="block py-2 text-gray-600">Blog</a>
+                <a href="#" class="block py-2 text-gray-600">Privacy Policy</a>
+                <a href="#" class="block py-2 text-gray-600">Resources</a>
             </div>
         </div>
     </header>
 
+    <section class="bg-[#14947c] py-20 md:py-32 text-center text-white">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">The Conscientious Life</h1>
+            <p class="text-xl md:text-2xl font-light opacity-90">In a world of chaos, a framework to rise above it.</p>
+        </div>
+    </section>
+
     <main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         
-        <section class="text-center max-w-4xl mx-auto mb-12 opacity-0 animate-on-scroll">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
-                In a world of chaos, a framework to bring a sense of clarity.
-            </h2>
-        </section>
-
-        <section class="py-8 opacity-0 animate-on-scroll">
-            <h3 class="text-2xl font-semibold text-center text-gray-800 mb-8">Explore Our Core Themes</h3>
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 mobile-grid-container">
-                <a href="well-being.html" class="flex flex-col items-center justify-center p-6 text-center rounded-lg shadow-sm border border-gray-100 hover:shadow-lg hover:bg-sky-500 hover:text-white transition-all transform hover:-translate-y-1">
-                    <span class="font-medium">Well-being</span>
+        <section class="mb-20 opacity-0 animate-on-scroll">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">Explore Our Core Themes</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 mobile-grid-container">
+                <a href="diet.html" class="bg-white p-8 text-center rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all">
+                    <span class="block text-gray-700 font-medium">Diet</span>
                 </a>
-                <a href="fitness.html" class="flex flex-col items-center justify-center p-6 text-center rounded-lg shadow-sm border border-gray-100 hover:shadow-lg hover:bg-sky-500 hover:text-white transition-all transform hover:-translate-y-1">
-                    <span class="font-medium">Fitness</span>
+                <a href="fitness.html" class="bg-white p-8 text-center rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all">
+                    <span class="block text-gray-700 font-medium">Fitness</span>
                 </a>
-                <a href="diet.html" class="flex flex-col items-center justify-center p-6 text-center rounded-lg shadow-sm border border-gray-100 hover:shadow-lg hover:bg-sky-500 hover:text-white transition-all transform hover:-translate-y-1">
-                    <span class="font-medium">Diet</span>
+                <a href="well-being.html" class="bg-white p-8 text-center rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all">
+                    <span class="block text-gray-700 font-medium">Well-being</span>
                 </a>
-                <a href="environment.html" class="flex flex-col items-center justify-center p-6 text-center rounded-lg shadow-sm border border-gray-100 hover:shadow-lg hover:bg-sky-500 hover:text-white transition-all transform hover:-translate-y-1">
-                    <span class="font-medium">Environment</span>
+                <a href="environment.html" class="bg-white p-8 text-center rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all">
+                    <span class="block text-gray-700 font-medium">Environment</span>
                 </a>
-                <a href="conscientiousness.html" class="flex flex-col items-center justify-center p-6 text-center rounded-lg shadow-sm border border-gray-100 hover:shadow-lg hover:bg-sky-500 hover:text-white transition-all transform hover:-translate-y-1">
-                    <span class="font-medium">Conscientiousness</span>
+                <a href="conscientiousness.html" class="bg-white p-8 text-center rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all">
+                    <span class="block text-gray-700 font-medium">Conscientiousness</span>
                 </a>
             </div>
         </section>
 
-        <section class="max-w-5xl mx-auto mt-20 opacity-0 animate-on-scroll">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Finding clarity in a world of noise.</h2>
+        <section class="max-w-5xl mx-auto opacity-0 animate-on-scroll">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Finding clarity in a world of noise.</h2>
                 <p class="text-lg text-gray-600 max-w-3xl mx-auto">
                     The Conscientious Life is a blog for those seeking genuine well-being from a humanist perspective. We explore how to reconnect with your true self and find balance in a world that often pulls us away from what truly matters.
                 </p>
@@ -107,29 +110,28 @@
 
             <div class="grid md:grid-cols-2 gap-12">
                 <div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Escaping the Leaky Jar</h3>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Escaping the Leaky Jar</h3>
                     <p class="text-gray-700 leading-relaxed">
                         In a world driven by fleeting desires and digital distractions, we feel more isolated than ever. Our goal is to help you lift the veil of external pressures—from technology to consumerism—to discover lasting fulfillment.
                     </p>
                 </div>
                 <div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Embracing Incremental Change</h3>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Embracing Incremental Change</h3>
                     <p class="text-gray-700 leading-relaxed">
-                        True, lasting transformation comes from small, measurable steps. Our philosophy is to unify all aspects of your life through key themes—Fitness, Diet, Well-being, Environment, and Conscientiousness.
+                        True, lasting transformation comes from small, measurable steps. Our philosophy is to unify all aspects of your life through key themes—Fitness, Diet, Well-being, Environment, and Conscientiousness—to help you attain a balanced and meaningful life.
                     </p>
                 </div>
             </div>
 
-            <div class="text-center mt-12">
-                <a href="#" class="inline-block bg-sky-600 text-white font-medium py-3 px-8 rounded-full shadow-lg hover:bg-sky-700 transition-colors">
+            <div class="text-center mt-16">
+                <a href="#" class="inline-block bg-[#14947c] text-white font-medium py-3 px-10 rounded-full shadow-lg hover:bg-[#0f7d68] transition-colors">
                     Discover Your Path
                 </a>
             </div>
         </section>
-
     </main>
 
-    <footer class="bg-neutral-100 border-t py-8 text-center text-gray-600 mt-20">
+    <footer class="bg-white border-t py-10 text-center text-gray-500 text-sm">
         <p>&copy; 2024 The Conscientious Life. All Rights Reserved.</p>
     </footer>
 
