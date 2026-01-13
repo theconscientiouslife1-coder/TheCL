@@ -16,30 +16,32 @@
             0% { opacity: 0; transform: translateY(20px); }
             100% { opacity: 1; transform: translateY(0); }
         }
-        .slide-up { animation: slide-up-and-fade 0.8s ease-out forwards; }
+        .slide-up { animation: slide-up-and-fade 0.7s ease-out forwards; }
+        .opacity-0 { opacity: 0; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-900">
+<body class="bg-gray-50 text-gray-800">
 
     <header class="bg-white shadow-sm sticky top-0 z-50">
-        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold text-teal-600">
-                <a href="index.html">The Conscientious Life</a>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4 border-b border-gray-100">
+                <a href="index.html" class="flex items-center space-x-2 text-gray-800">
+                    <span class="text-xl md:text-2xl font-bold text-teal-600">Δ</span>
+                    <span class="text-lg md:text-xl font-medium tracking-tight">The Conscientious Life</span>
+                </a>
+                <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-600">
+                    <a href="index.html" class="hover:text-teal-600 transition-colors">Home</a>
+                    <a href="about.html" class="text-teal-600 font-semibold border-b-2 border-teal-600">About</a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
             </div>
-            <div class="hidden md:flex space-x-8">
-                <a href="index.html" class="text-gray-600 hover:text-teal-600 transition-colors">Home</a>
-                <a href="About.html" class="text-teal-600 font-semibold border-b-2 border-teal-600">About</a>
-            </div>
-            <div class="md:hidden">
-                <button id="mobile-menu-button" class="text-gray-600 hover:text-teal-600 focus:outline-none">
-                    <i data-lucide="menu" class="w-6 h-6"></i>
-                </button>
-            </div>
-        </nav>
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
-            <div class="px-4 py-2 space-y-1">
-                <a href="index.html" class="block py-2 text-gray-600 hover:text-teal-600">Home</a>
-                <a href="About.html" class="block py-2 text-teal-600 font-semibold">About</a>
+            <div id="mobile-menu" class="hidden md:hidden pb-4 pt-2">
+                <a href="index.html" class="block py-2 text-gray-600">Home</a>
+                <a href="about.html" class="block py-2 text-teal-600 font-semibold">About</a>
             </div>
         </div>
     </header>
@@ -55,29 +57,29 @@
         </section>
 
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 pb-16">
-            <div class="max-w-4xl mx-auto animate-on-scroll">
+            <div class="max-w-4xl mx-auto animate-on-scroll opacity-0">
                 
                 <div class="mb-16">
                     <h3 class="text-2xl font-bold text-gray-800 mb-8 text-center">The 5 Pillars of Our Philosophy</h3>
                     <div class="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
                         <div class="flex flex-col items-center p-4 rounded-xl bg-white shadow-sm border border-teal-100 transition-transform hover:scale-105">
-                            <div class="p-3 bg-teal-600 rounded-lg text-white mb-3"><i data-lucide="dumbbell" class="w-6 h-6"></i></div>
+                            <div class="p-3 bg-teal-50 rounded-lg text-teal-600 mb-3"><i data-lucide="dumbbell" class="w-6 h-6"></i></div>
                             <span class="font-semibold text-teal-900">Fitness</span>
                         </div>
                         <div class="flex flex-col items-center p-4 rounded-xl bg-white shadow-sm border border-teal-100 transition-transform hover:scale-105">
-                            <div class="p-3 bg-teal-600 rounded-lg text-white mb-3"><i data-lucide="apple" class="w-6 h-6"></i></div>
+                            <div class="p-3 bg-teal-50 rounded-lg text-teal-600 mb-3"><i data-lucide="apple" class="w-6 h-6"></i></div>
                             <span class="font-semibold text-teal-900">Diet</span>
                         </div>
                         <div class="flex flex-col items-center p-4 rounded-xl bg-white shadow-sm border border-teal-100 transition-transform hover:scale-105">
-                            <div class="p-3 bg-teal-600 rounded-lg text-white mb-3"><i data-lucide="heart" class="w-6 h-6"></i></div>
+                            <div class="p-3 bg-teal-50 rounded-lg text-teal-600 mb-3"><i data-lucide="heart" class="w-6 h-6"></i></div>
                             <span class="font-semibold text-teal-900">Well-being</span>
                         </div>
                         <div class="flex flex-col items-center p-4 rounded-xl bg-white shadow-sm border border-teal-100 transition-transform hover:scale-105">
-                            <div class="p-3 bg-teal-600 rounded-lg text-white mb-3"><i data-lucide="brain" class="w-6 h-6"></i></div>
-                            <span class="font-semibold text-teal-900 text-xs md:text-sm lg:text-base break-words">Conscientiousness</span>
+                            <div class="p-3 bg-teal-50 rounded-lg text-teal-600 mb-3"><i data-lucide="brain" class="w-6 h-6"></i></div>
+                            <span class="font-semibold text-teal-900 text-xs md:text-sm">Conscientiousness</span>
                         </div>
                         <div class="flex flex-col items-center p-4 rounded-xl bg-white shadow-sm border border-teal-100 transition-transform hover:scale-105">
-                            <div class="p-3 bg-teal-600 rounded-lg text-white mb-3"><i data-lucide="leaf" class="w-6 h-6"></i></div>
+                            <div class="p-3 bg-teal-50 rounded-lg text-teal-600 mb-3"><i data-lucide="leaf" class="w-6 h-6"></i></div>
                             <span class="font-semibold text-teal-900">Environment</span>
                         </div>
                     </div>
@@ -101,11 +103,8 @@
     </footer>
 
     <script>
-        window.addEventListener('load', () => {
-            if (typeof lucide !== 'undefined') {
-                lucide.createIcons();
-            }
-        });
+        // 3. INITIALIZE LUCIDE ICONS
+        lucide.createIcons();
 
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -117,9 +116,15 @@
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('slide-up');
+                    entry.target.classList.remove('opacity-0');
                     observer.unobserve(entry.target);
                 }
             });
         }, { threshold: 0.1 });
 
-        document.querySelectorAll
+        document.querySelectorAll('.animate-on-scroll').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
