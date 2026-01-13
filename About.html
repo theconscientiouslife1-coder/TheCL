@@ -50,4 +50,109 @@
 
             <div class="md:hidden">
                 <button id="mobile-menu-button" class="text-gray-600 hover:text-teal-600 focus:outline-none">
-                    <i data-lucide="menu"
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </nav>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-2 space-y-1">
+                <a href="index.html" class="block py-2 text-gray-600 hover:text-teal-600">Home</a>
+                <a href="About.html" class="block py-2 text-teal-600 font-semibold">About</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <section class="bg-teal-600 py-16 md:py-24 mb-12">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h1 class="text-4xl md:text-5xl font-bold text-center text-white">Our Philosophy</h1>
+                <p class="text-teal-100 text-center mt-4 max-w-2xl mx-auto text-lg">
+                    Finding balance and purpose in a modern, overwhelming world.
+                </p>
+            </div>
+        </section>
+
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+            <div class="max-w-4xl mx-auto space-y-6 text-lg text-gray-700 leading-relaxed animate-on-scroll opacity-0">
+                <p>This blog is to provide a guide to assist people who feel overwhelmed by the modern world, who want to take control of their lives and make a difference while having a sense of balance as to who one truly is and being at one with their environment/world/externus.</p>
+                <p>This is a non-denominational site (there is no belief system implied or being referenced), and what is written is from a humanist perspective. It is hoped that what is written can provide a semblance of hope and allow one to utilise what is conveyed and can be applied to one's everyday dealings in the most positive and proactive manner possible.</p>
+                <p>In the age of Individualism, technology plays on the fears, preferences etc. which further isolates us and heightens those negative emotions further isolating us. This blog aims to assist people in lifting the veil (veil of maya) that restricts those from attaining their true self and see how that perpetuates into society.</p>
+                
+                <div class="pt-10">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-8 text-center">The 5 Pillars of Our Philosophy</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
+                        <div class="flex flex-col items-center p-4 rounded-xl bg-white shadow-sm border border-teal-100 transition-transform hover:scale-105">
+                            <div class="p-3 bg-teal-600 rounded-lg text-white mb-3">
+                                <i data-lucide="dumbbell" class="w-6 h-6"></i>
+                            </div>
+                            <span class="font-semibold text-teal-900">Fitness</span>
+                        </div>
+                        <div class="flex flex-col items-center p-4 rounded-xl bg-white shadow-sm border border-teal-100 transition-transform hover:scale-105">
+                            <div class="p-3 bg-teal-600 rounded-lg text-white mb-3">
+                                <i data-lucide="apple" class="w-6 h-6"></i>
+                            </div>
+                            <span class="font-semibold text-teal-900">Diet</span>
+                        </div>
+                        <div class="flex flex-col items-center p-4 rounded-xl bg-white shadow-sm border border-teal-100 transition-transform hover:scale-105">
+                            <div class="p-3 bg-teal-600 rounded-lg text-white mb-3">
+                                <i data-lucide="heart" class="w-6 h-6"></i>
+                            </div>
+                            <span class="font-semibold text-teal-900">Well-being</span>
+                        </div>
+                        <div class="flex flex-col items-center p-4 rounded-xl bg-white shadow-sm border border-teal-100 transition-transform hover:scale-105">
+                            <div class="p-3 bg-teal-600 rounded-lg text-white mb-3">
+                                <i data-lucide="brain" class="w-6 h-6"></i>
+                            </div>
+                            <span class="font-semibold text-teal-900">Conscience</span>
+                        </div>
+                        <div class="flex flex-col items-center p-4 rounded-xl bg-white shadow-sm border border-teal-100 transition-transform hover:scale-105">
+                            <div class="p-3 bg-teal-600 rounded-lg text-white mb-3">
+                                <i data-lucide="leaf" class="w-6 h-6"></i>
+                            </div>
+                            <span class="font-semibold text-teal-900">Environment</span>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="pt-6">When we seek to change aspects of our life, our nature is to think of the whole change and with even the greatest will this leads us to being overwhelmed which inevitably results in us giving up. The key to substantial change is incremental change i.e. measurable. This blog will unite all the aspects of person's life and how to attain a balance and a sense of worth.</p>
+                <p class="italic text-center text-gray-500">These themes are divided between the self and the external, which shows how interconnected we all are.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white border-t">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-gray-600">
+            <p>&copy; 2024 The Conscientious Life. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Intersection Observer for animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('slide-up');
+                    entry.target.classList.remove('opacity-0');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.animate-on-scroll').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
