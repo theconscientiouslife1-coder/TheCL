@@ -7,6 +7,7 @@
     <meta name="description" content="Discover lasting fulfillment through small, measurable steps. Unify Fitness, Diet, Well-being, and Environment to connect with your true, conscientious self.">
     
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -82,20 +83,39 @@
         <section class="mb-20 opacity-0 animate-on-scroll">
             <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">Explore Our Core Themes</h2>
             <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 mobile-grid-container">
-                <a href="diet.html" class="bg-white p-8 text-center rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all">
+                <a href="diet.html" class="bg-white p-8 text-center rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all group">
+                    <div class="p-3 bg-teal-50 rounded-lg text-[#14947c] mb-4 inline-block group-hover:bg-[#14947c] group-hover:text-white transition-colors">
+                        <i data-lucide="apple" class="w-8 h-8"></i>
+                    </div>
                     <span class="block text-gray-700 font-medium">Diet</span>
                 </a>
-                <a href="fitness.html" class="bg-white p-8 text-center rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all">
+
+                <a href="fitness.html" class="bg-white p-8 text-center rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all group">
+                    <div class="p-3 bg-teal-50 rounded-lg text-[#14947c] mb-4 inline-block group-hover:bg-[#14947c] group-hover:text-white transition-colors">
+                        <i data-lucide="dumbbell" class="w-8 h-8"></i>
+                    </div>
                     <span class="block text-gray-700 font-medium">Fitness</span>
                 </a>
-                <a href="well-being.html" class="bg-white p-8 text-center rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all">
+
+                <a href="well-being.html" class="bg-white p-8 text-center rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all group">
+                    <div class="p-3 bg-teal-50 rounded-lg text-[#14947c] mb-4 inline-block group-hover:bg-[#14947c] group-hover:text-white transition-colors">
+                        <i data-lucide="heart" class="w-8 h-8"></i>
+                    </div>
                     <span class="block text-gray-700 font-medium">Well-being</span>
                 </a>
-                <a href="environment.html" class="bg-white p-8 text-center rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all">
+
+                <a href="environment.html" class="bg-white p-8 text-center rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all group">
+                    <div class="p-3 bg-teal-50 rounded-lg text-[#14947c] mb-4 inline-block group-hover:bg-[#14947c] group-hover:text-white transition-colors">
+                        <i data-lucide="leaf" class="w-8 h-8"></i>
+                    </div>
                     <span class="block text-gray-700 font-medium">Environment</span>
                 </a>
-                <a href="conscientiousness.html" class="bg-white p-8 text-center rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all">
-                    <span class="block text-gray-700 font-medium">Conscientiousness</span>
+
+                <a href="conscientiousness.html" class="bg-white p-8 text-center rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all group">
+                    <div class="p-3 bg-teal-50 rounded-lg text-[#14947c] mb-4 inline-block group-hover:bg-[#14947c] group-hover:text-white transition-colors">
+                        <i data-lucide="brain" class="w-8 h-8"></i>
+                    </div>
+                    <span class="block text-gray-700 font-medium text-sm sm:text-base">Conscientiousness</span>
                 </a>
             </div>
         </section>
@@ -131,25 +151,4 @@
         </section>
     </main>
 
-    <footer class="bg-white border-t py-10 text-center text-gray-500 text-sm">
-        <p>&copy; 2024 The Conscientious Life. All Rights Reserved.</p>
-    </footer>
-
-    <script>
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        mobileMenuButton.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('slide-up');
-                    entry.target.classList.remove('opacity-0');
-                }
-            });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('.animate-on-scroll').forEach(s => observer.observe(s));
-    </script> 
-</body>
-</html>
+    <footer
