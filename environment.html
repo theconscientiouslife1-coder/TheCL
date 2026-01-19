@@ -86,4 +86,40 @@
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <div class="lg:col-span-2">
-                <article class="bg-white rounded-2xl shadow-
+                <article class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col md:flex-row animate-on-scroll opacity-0">
+                    <img src="https://via.placeholder.com/400x300" alt="Environment" class="w-full md:w-1/3 h-52 md:h-auto object-cover">
+                    <div class="p-8 flex flex-col justify-between w-full">
+                        <div>
+                            <h2 class="text-2xl font-bold text-gray-900 mb-3">Consumption, Conscientiousness, and the Breaking Point</h2>
+                            <p class="text-gray-600 mb-4">An exploration of how our daily choices impact the world and how to shift towards a sustainable future.</p>
+                        </div>
+                        <div class="flex justify-between items-center pt-4 border-t border-gray-50">
+                            <span class="text-sm text-gray-500">Sustainability | Alex P.</span>
+                            <a href="the_environment_main_article.html" class="text-[#14947c] hover:underline font-semibold flex items-center">
+                                Read Article <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white border-t py-10 text-center text-gray-500 text-sm">
+        <p>&copy; 2024 The Conscientious Life. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('slide-up');
+                    entry.target.classList.remove('opacity-0');
+                }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.animate-on-scroll').forEach(s => observer.observe(s));
+    </script>
+</body>
+</html>
