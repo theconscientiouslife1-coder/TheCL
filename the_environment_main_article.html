@@ -4,101 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Environment - The Conscientious Life</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; margin: 0; background-color: #f9fafb; }
-        
-        /* HARD-CODED GREEN RIBBON */
-        .ribbon-header { 
-            background: white; 
-            border-top: 5px solid #14947c !important; 
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1); 
-            padding: 1.25rem 0;
-        }
-
-        /* HARD-CODED TABLE STYLES */
-        .ref-table { width: 100%; border-collapse: collapse; background: white; border: 1px solid #e5e7eb; border-radius: 8px; overflow: hidden; }
-        .ref-table th { background: #f9fafb; padding: 12px 16px; text-align: left; font-size: 11px; text-transform: uppercase; color: #6b7280; border-bottom: 1px solid #e5e7eb; }
-        .ref-table td { padding: 14px 16px; border-bottom: 1px solid #e5e7eb; font-size: 14px; }
-        
-        .tag { padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: bold; text-transform: uppercase; }
-        .tag-critical { background: #fee2e2; color: #dc2626; }
-        .tag-degraded { background: #ffedd5; color: #ea580c; }
-    </style>
 </head>
-<body class="text-gray-800 flex flex-col min-h-screen">
+<body style="margin:0; padding:0; font-family: Arial, sans-serif; background-color: #f9fafb; color: #333; line-height: 1.6;">
 
-    <header class="ribbon-header">
-        <div class="max-w-3xl mx-auto px-4">
-            <a href="/" class="flex items-center space-x-2 no-underline">
-                <span style="color: #14947c; font-size: 1.5rem; font-weight: bold;">Δ</span>
-                <span style="color: #111827; font-size: 1.25rem; font-weight: 600;">The Conscientious Life</span>
-            </a>
+    <div style="background-color: white; border-top: 8px solid #14947c; border-bottom: 1px solid #ddd; padding: 20px;">
+        <div style="max-width: 800px; margin: 0 auto; font-size: 20px; font-weight: bold;">
+            <span style="color: #14947c;">Δ</span> The Conscientious Life
         </div>
-    </header>
+    </div>
 
-    <main class="flex-grow max-w-3xl mx-auto px-4 py-12">
-        <article>
-            <header class="mb-10 text-center">
-                <div style="color: #14947c; font-weight: bold; font-size: 12px; letter-spacing: 2px; margin-bottom: 8px;">ENVIRONMENT</div>
-                <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">Consumption, Conscientiousness, and the Breaking Point</h1>
-            </header>
+    <div style="max-width: 800px; margin: 40px auto; padding: 0 20px;">
+        <div style="text-align: center; color: #14947c; font-weight: bold; letter-spacing: 2px;">ENVIRONMENT</div>
+        <h1 style="font-size: 36px; text-align: center; margin-top: 10px;">Consumption, Conscientiousness, and the Breaking Point</h1>
 
-            <div class="text-gray-700 leading-relaxed text-lg">
-                <p class="text-xl md:text-2xl text-gray-500 italic mb-10 border-b border-gray-100 pb-10">
-                    We live in a world where we have become sanitised and at worse apathetic by all we see and hear...
-                </p>
-                
-                <p class="mb-6">We are almost 50 years into the economic experiment of neo-liberalism, which sought to allow the individual the freedom to consume as much as they wanted...</p>
-                
-                <blockquote style="border-left: 4px solid #14947c; padding-left: 20px; margin: 40px 0; font-style: italic; font-size: 22px; color: #111827;">
-                    "Unfettered consumption is in contradiction to a finite world. We have reached the environmental breaking point."
-                </blockquote>
+        <p style="font-size: 20px; color: #666; font-style: italic; border-bottom: 1px solid #eee; padding-bottom: 20px;">
+            We live in a world where we have become sanitised and at worse apathetic by all we see and hear...
+        </p>
 
-                <p class="mb-10">Yet, there is a debt to be paid for these desires. It is the environment that pays the heavy price—from raw materials to manufacturing and disposal.</p>
+        <p>We are almost 50 years into the economic experiment of neo-liberalism, which sought to allow the individual the freedom to consume as much as they wanted. For over four decades, we have witnessed consumption on a scale never witnessed before.</p>
 
-                <div style="margin: 40px 0;">
-                    <h3 style="font-weight: bold; margin-bottom: 15px;">Environmental Impact References</h3>
-                    <table class="ref-table">
-                        <thead>
-                            <tr>
-                                <th>Resource</th>
-                                <th>Status</th>
-                                <th>Key Statistic</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td style="font-weight: 600;">Water Quality</td>
-                                <td><span class="tag tag-critical">Critical</span></td>
-                                <td>80% Wastewater untreated (UNEP)</td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: 600;">Soil Health</td>
-                                <td><span class="tag tag-degraded">Degraded</span></td>
-                                <td>40% Land degraded (UNCCD)</td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight: 600;">Air & Plastics</td>
-                                <td><span class="tag tag-critical">Critical</span></td>
-                                <td>99% Polluted air (WHO)</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+        <div style="border-left: 5px solid #14947c; padding: 15px 20px; background: #f0fdf4; font-style: italic; font-size: 22px; margin: 30px 0;">
+            "Unfettered consumption is in contradiction to a finite world. We have reached the environmental breaking point."
+        </blockquote>
 
-                <p>This slow descent into destruction requires action from all stakeholders, starting at the personal level.</p>
-            </div>
-        </article>
-    </main>
+        <p>The modern economy works on the basis of all our individual desires being fulfilled, followed by new enticements to propel the ship forward.</p>
 
-    <footer class="py-10 text-center text-gray-400 text-xs border-t border-gray-100 mt-10">
-        <p>&copy; 2026 The Conscientious Life. All Rights Reserved.</p>
-        <p style="color: #f3f4f6;">CSS_HARDCODE_V2</p>
+        <div style="margin: 40px 0;">
+            <h3 style="margin-bottom: 10px;">Environmental Impact References</h3>
+            <table style="width: 100%; border-collapse: collapse; background: white; border: 1px solid #ddd;">
+                <tr style="background: #f4f4f4;">
+                    <th style="padding: 10px; border: 1px solid #ddd; text-align: left;">Resource</th>
+                    <th style="padding: 10px; border: 1px solid #ddd; text-align: left;">Status</th>
+                    <th style="padding: 10px; border: 1px solid #ddd; text-align: left;">Statistic</th>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Water Quality</td>
+                    <td style="padding: 10px; border: 1px solid #ddd; color: red; font-weight: bold;">CRITICAL</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">80% Wastewater untreated (UNEP)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Soil Health</td>
+                    <td style="padding: 10px; border: 1px solid #ddd; color: orange; font-weight: bold;">DEGRADED</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">40% Land degraded (UNCCD)</td>
+                </tr>
+            </table>
+        </div>
+
+        <p>Transitioning to a conscientious life will require sacrifices in terms of current liberties and economic livelihoods, but the alternative is no longer tenable.</p>
+    </div>
+
+    <footer style="text-align: center; margin-top: 50px; padding: 20px; color: #999; border-top: 1px solid #eee;">
+        &copy; 2026 The Conscientious Life. All Rights Reserved.
+        <div style="font-size: 10px; color: #ccc;">FINAL_DEPLOY_SUCCESS_CHECK</div>
     </footer>
 
-    <script>lucide.createIcons();</script>
 </body>
 </html>
