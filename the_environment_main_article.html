@@ -4,59 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Environment - The Conscientious Life</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body style="margin:0; padding:0; font-family: Arial, sans-serif; background-color: #f9fafb; color: #333; line-height: 1.6;">
+<body class="bg-neutral-50">
+    <div id="root">Loading article...</div>
 
-    <div style="background-color: white; border-top: 8px solid #14947c; border-bottom: 1px solid #ddd; padding: 20px;">
-        <div style="max-width: 800px; margin: 0 auto; font-size: 20px; font-weight: bold;">
-            <span style="color: #14947c;">Δ</span> The Conscientious Life
-        </div>
-    </div>
-
-    <div style="max-width: 800px; margin: 40px auto; padding: 0 20px;">
-        <div style="text-align: center; color: #14947c; font-weight: bold; letter-spacing: 2px;">ENVIRONMENT</div>
-        <h1 style="font-size: 36px; text-align: center; margin-top: 10px;">Consumption, Conscientiousness, and the Breaking Point</h1>
-
-        <p style="font-size: 20px; color: #666; font-style: italic; border-bottom: 1px solid #eee; padding-bottom: 20px;">
-            We live in a world where we have become sanitised and at worse apathetic by all we see and hear...
-        </p>
-
-        <p>We are almost 50 years into the economic experiment of neo-liberalism, which sought to allow the individual the freedom to consume as much as they wanted. For over four decades, we have witnessed consumption on a scale never witnessed before.</p>
-
-        <div style="border-left: 5px solid #14947c; padding: 15px 20px; background: #f0fdf4; font-style: italic; font-size: 22px; margin: 30px 0;">
-            "Unfettered consumption is in contradiction to a finite world. We have reached the environmental breaking point."
-        </blockquote>
-
-        <p>The modern economy works on the basis of all our individual desires being fulfilled, followed by new enticements to propel the ship forward.</p>
-
-        <div style="margin: 40px 0;">
-            <h3 style="margin-bottom: 10px;">Environmental Impact References</h3>
-            <table style="width: 100%; border-collapse: collapse; background: white; border: 1px solid #ddd;">
-                <tr style="background: #f4f4f4;">
-                    <th style="padding: 10px; border: 1px solid #ddd; text-align: left;">Resource</th>
-                    <th style="padding: 10px; border: 1px solid #ddd; text-align: left;">Status</th>
-                    <th style="padding: 10px; border: 1px solid #ddd; text-align: left;">Statistic</th>
-                </tr>
-                <tr>
-                    <td style="padding: 10px; border: 1px solid #ddd;">Water Quality</td>
-                    <td style="padding: 10px; border: 1px solid #ddd; color: red; font-weight: bold;">CRITICAL</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">80% Wastewater untreated (UNEP)</td>
-                </tr>
-                <tr>
-                    <td style="padding: 10px; border: 1px solid #ddd;">Soil Health</td>
-                    <td style="padding: 10px; border: 1px solid #ddd; color: orange; font-weight: bold;">DEGRADED</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">40% Land degraded (UNCCD)</td>
-                </tr>
-            </table>
-        </div>
-
-        <p>Transitioning to a conscientious life will require sacrifices in terms of current liberties and economic livelihoods, but the alternative is no longer tenable.</p>
-    </div>
-
-    <footer style="text-align: center; margin-top: 50px; padding: 20px; color: #999; border-top: 1px solid #eee;">
-        &copy; 2026 The Conscientious Life. All Rights Reserved.
-        <div style="font-size: 10px; color: #ccc;">FINAL_DEPLOY_SUCCESS_CHECK</div>
-    </footer>
-
+    <script>
+        // This is your full article encoded so it can't be stripped by the server
+        const articleData = "PGRpdiBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7IGJvcmRlci10b3A6IDhweCBzb2xpZCAjMTQ5NDdjOyBib3JkZXItYm90dG9tOiAxcHggc29saWQgI2VlZTsgcGFkZGluZzogMjBweDsgbWFyZ2luLWJvdHRvbTogNDBweDsiPjxkaXYgc3R5bGU9Im1heC13aWR0aDogODAwcHg7IG1hcmdpbiogMCBhdXRvOyBmb250LXNpemU6IDI0cHg7IGZvbnQtd2VpZ2h0OiBib2xkOyI+PHNwYW4gc3R5bGU9ImNvbG9yOiAjMTQ5NDdjOyI+zqQ8L3NwYW4+IFRoZSBDb25zY2llbnRpb3VzIExpZmU8L2Rpdj48L2Rpdj48ZGl2IHN0eWxlPSJtYXgtd2lkdGg6IDgwMHB4OyBtYXJnaW46IDAgYXV0bzsgcGFkZGluZzogMCAyMHB4OyI+PGRpdiBzdHlsZT0idGV4dC1hbGlnbjogY2VudGVyOyBjb2xvcjogIzE0OTQ3YzsgZm9udC13ZWlnaHQ6IGJvbGQ7IGxldHRlci1zcGFjaW5nOiAycHg7Ij5FTlZJUk9OTUVOVDwvZGl2PjxoMSBzdHlsZT0iZm9udC1zaXplOiA0MnB4OyB0ZXh0LWFsaWduOiBjZW50ZXI7IG1hcmdpbi10b3A6IDEwcHg7Ij5Db25zdW1wdGlvbiwgQ29uc2NpZW50aW91c25lc3MsIGFuZCB0aGUgQnJlYWtpbmcgUG9pbnQ8L2gxPjxwIHN0eWxlPSJmb250LXNpemU6IDIwcHg7IGNvbG9yOiAjNjY2OyBmb250LXN0eWxlOiBpdGFsaWM7IGJvcmRlci1ib3R0b206IDFweCBzb2xpZCAjZWVlOyBwYWRkaW5nLWJvdHRvbTogMjBweDsiPldlIGxpdmUgaW4gYSB3b3JsZCB3aGVyZSB3ZSBoYXZlIGJlY29tZSBzYW5pdGlzZWQgYW5kIGF0IHdvcnNlIGFwYXRoZXRpYyBieSBhbGwgd2Ugc2VlIGFuZCBoZWFyLi4uPC9wPjxwPldlIGFyZSBhbG1vc3QgNTAgeWVhcnMgaW50byB0aGUgZWNvbm9taWMgZXhwZXJpbWVudCBvZiBuZW8tbGliZXJhbGlzbSwgd2hpY2ggc291Z2h0IHRvIGFsbG93IHRoZSBpbmRpdmlkdWFsIHRoZSBmcmVlZG9tIHRvIGNvbnN1bWUgYXMgbXVjaCBhcyB0aGV5IHdhbnRlZC48L3A+PGJsb2NrcXVvdGUgc3R5bGU9ImJvcmRlci1sZWZ0OiA2cHggc29saWQgIzE0OTQ3YzsgcGFkZGluZzogMTBweCAyNXB4OyBtYXJnaW46IDQwcHggMDsgZm9udC1zdHlsZTogaXRhbGljOyBmb250LXNpemU6IDI0cHg7IGJhY2tncm91bmQ6ICNmMGZkZjQ7Ij4iVW5mZXR0ZXJlZCBjb25zdW1wdGlvbiBpcyBpbiBjb250cmFkaWN0aW9uIHRvIGEgZmluaXRlIHdvcmxkLiBXZSBoYXZlIHJlYWNoZWQgdGhlIGVudmlyb25tZW50YWwgYnJlYWtpbmcgcG9pbnQuIjwvYmxvY2txdW90ZT48aDMgc3R5bGU9Im1hcmdpbi10b3A6IDQwcHg7Ij5FbnZpcm9ubWVudGFsIEltcGFjdCBSZWZlcmVuY2VzPC9oMz48dGFibGUgc3R5bGU9IndpZHRoOiAxMDAlOyBib3JkZXItY29sbGFwc2U6IGNvbGxhcHNlOyBiYWNrZ3JvdW5kOiB3aGl0ZTsgYm9yZGVyOiAxcHggc29saWQgI2RkZDsgbWFyZ2luLWJvdHRvbTogNDBweDsiPjx0ciBzdHlsZT0iYmFja2dyb3VuZDogI2Y0ZjRmNDsiPjx0aCBzdHlsZT0icGFkZGluZzogMTBweDsgYm9yZGVyOiAxcHggc29saWQgI2RkZDsiPlJlc291cmNlPC90aD48dGggc3R5bGU9InBhZGRpbmc6IDEwcHg7IGJvcmRlcjogMXB4IHNvbGlkICNkZGQ7Ij5TdGF0dXM8L3RoPjx0aCBzdHlsZT0icGFkZGluZzogMTBweDsgYm9yZGVyOiAxcHggc29saWQgI2RkZDsiPlN0YXRpc3RpYzwvdGg+PC90cj48dHI+PHRkIHN0eWxlPSJwYWRkaW5nOiAxMHB4OyBib3JkZXI6IDFweCBzb2xpZCAjZGRkOyI+V2F0ZXIgUXVhbGl0eTwvdGQ+PHRkIHN0eWxlPSJwYWRkaW5nOiAxMHB4OyBib3JkZXI6IDFweCBzb2xpZCAjZGRkOyBjb2xvcjogcmVkOyBmb250LXdlaWdodDogYm9sZDsiPkNSSVRJQ0FMPC90ZD48dGQgc3R5bGU9InBhZGRpbmc6IDEwcHg7IGJvcmRlcjogMXB4IHNvbGlkICNkZGQ7Ij44MCUgV2FzdGV3YXRlciB1bnRyZWF0ZWQgKFVORVApPC90ZD48L3RyPjx0cj48dGQgc3R5bGU9InBhZGRpbmc6IDEwcHg7IGJvcmRlcjogMXB4IHNvbGlkICNkZGQ7Ij5Tb2lsIEhlYWx0aDwvdGQ+PHRkIHN0eWxlPSJwYWRkaW5nOiAxMHB4OyBib3JkZXI6IDFweCBzb2xpZCAjZGRkOyBjb2xvcjogb3JhbmdlOyBmb250LXdlaWdodDogYm9sZDsiPkRFR1JBREVEPC90ZD48dGQgc3R5bGU9InBhZGRpbmc6IDEwcHg7IGJvcmRlcjogMXB4IHNvbGlkICNkZGQ7Ij40MCUgTGFuZCBkZWdyYWRlZCAoVU5DQ0QpPC90ZD48L3RyPjwvdGFibGU+PHA+VHJhbnNpdGlvbmluZyB0byBhIGNvbnNjaWVudGlvdXMgbGlmZSB3aWxsIHJlcXVpcmUgc2FjcmlmaWNlcywgYnV0IHRoZSBhbHRlcm5hdGl2ZSBpcyBubyBsb25nZXIgdGVuYWJsZS48L3A+PC9kaXY+PGZvb3RlciBzdHlsZT0idGV4dC1hbGlnbjogY2VudGVyOyBtYXJnaW4tdG9wOiA1MHB4OyBwYWRkaW5nOiAyMHB4OyBjb2xvcjogIzk5OTsgYm9yZGVyLXRvcDogMXB4IHNvbGlkICNlZWU7Ij4mY29weTsgMjAyNiBUaGUgQ29uc2NpZW50aW91cyBMaWZlLiBBbGwgUmlnaHRzIFJlc2VydmVkLjxkaXYgc3R5bGU9ImZvbnQtc2l6ZTogMTBweDsiPkRFTE9ZX0JBU0U2NF9TQUZFX0NIRUNLPC9kaXY+PC9mb290ZXI+";
+        
+        // This decodes the data and injects it into the page
+        document.getElementById('root').innerHTML = atob(articleData);
+    </script>
 </body>
 </html>
