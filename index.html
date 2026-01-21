@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conscientious Life: Holistic Well-being, Environment, & Personal Growth Blog</title>
-    <link rel="stylesheet" href="/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,14 +12,18 @@
     <style>
         body { font-family: 'Inter', sans-serif; display: flex; flex-direction: column; min-height: 100vh; }
         .flex-grow { flex-grow: 1; }
+        .top-ribbon { height: 4px; background-color: #14947c; width: 100%; }
         @keyframes slide-up-and-fade { 0% { opacity: 0; transform: translateY(20px); } 100% { opacity: 1; transform: translateY(0); } }
         .slide-up { animation: slide-up-and-fade 0.8s ease-out forwards; }
         .opacity-0 { opacity: 0; }
+        @media (max-width: 639px) {
+            .mobile-grid-container { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .mobile-grid-container > :nth-child(5) { grid-column: span 2 / span 2; justify-self: center; }
+        }
     </style>
 </head>
 <body class="bg-neutral-50 text-gray-800">
     <div class="top-ribbon"></div>
-
     <header class="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-4">
@@ -34,11 +37,6 @@
                     <a href="#" class="hover:text-[#14947c] transition-colors">Resources</a>
                 </nav>
                 <button id="mobile-menu-button" class="md:hidden p-2 text-gray-600"><i data-lucide="menu"></i></button>
-            </div>
-            <div id="mobile-menu" class="hidden md:hidden pb-4 space-y-2 border-t pt-2">
-                <a href="About.html" class="block py-2 text-gray-600">About</a>
-                <a href="#" class="block py-2 text-gray-600">Privacy Policy</a>
-                <a href="#" class="block py-2 text-gray-600">Resources</a>
             </div>
         </div>
     </header>
@@ -58,15 +56,10 @@
                     <p>Fulfillment doesn't come from grand, isolated gestures. It is built through the small, conscientious choices we make every day. By aligning our internal world with our external impact, we create a life that is not only healthier for us, but better for everyone.</p>
                     <p>We believe that true personal growth is achieved by focusing on five core pillars: <strong>Fitness, Diet, Well-being, the Environment, and Conscientiousness.</strong> This blog provides the tools and insights to help you navigate these themes and attain a balanced and meaningful life.</p>
                 </div>
-                <div class="mt-10">
-                    <a href="About.html" class="inline-block bg-[#14947c] text-white font-bold py-3 px-10 rounded-full shadow-md hover:bg-[#0f7d68] transition-all transform hover:-translate-y-1">
-                       Discover Your Path
-                   </a>
-               </div>
             </div>
         </section>
 
-        <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-4 mobile-grid-container">
             <a href="fitness.html" class="bg-white p-4 text-center rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all group">
                 <div class="p-2 bg-teal-50 rounded-lg text-[#14947c] mb-2 inline-block group-hover:bg-[#14947c] group-hover:text-white transition-colors">
                     <i data-lucide="dumbbell" class="w-6 h-6"></i>
@@ -85,30 +78,25 @@
                 </div>
                 <span class="block text-gray-700 font-medium text-sm">Well-being</span>
             </a>
-            <a href="conscientiousness.html" class="bg-white p-4 text-center rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all group">
-                <div class="p-2 bg-teal-50 rounded-lg text-[#14947c] mb-2 inline-block group-hover:bg-[#14947c] group-hover:text-white transition-colors">
-                    <i data-lucide="brain" class="w-6 h-6"></i>
-                </div>
-                <span class="block text-gray-700 font-medium text-sm">Conscientiousness</span>
-            </a>
             <a href="environment.html" class="bg-white p-4 text-center rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all group">
                 <div class="p-2 bg-teal-50 rounded-lg text-[#14947c] mb-2 inline-block group-hover:bg-[#14947c] group-hover:text-white transition-colors">
                     <i data-lucide="leaf" class="w-6 h-6"></i>
                 </div>
                 <span class="block text-gray-700 font-medium text-sm">Environment</span>
             </a>
+            <a href="conscientiousness.html" class="bg-white p-4 text-center rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all group">
+                <div class="p-2 bg-teal-50 rounded-lg text-[#14947c] mb-2 inline-block group-hover:bg-[#14947c] group-hover:text-white transition-colors">
+                    <i data-lucide="brain" class="w-6 h-6"></i>
+                </div>
+                <span class="block text-gray-700 font-medium text-sm">Conscientiousness</span>
+            </a>
         </div>
     </main>
-
     <footer class="bg-white border-t py-12 text-center text-gray-500 text-sm">
         <p>&copy; 2024 The Conscientious Life. All Rights Reserved.</p>
     </footer>
-
     <script>
         lucide.createIcons();
-        const menuBtn = document.getElementById('mobile-menu-button');
-        const menu = document.getElementById('mobile-menu');
-        menuBtn.addEventListener('click', () => menu.classList.toggle('hidden'));
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
