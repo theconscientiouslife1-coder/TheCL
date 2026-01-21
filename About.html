@@ -29,6 +29,7 @@
                     <span class="text-lg font-medium">The Conscientious Life</span>
                 </a>
                 <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-600">
+                    <a href="index.html" class="hover:text-[#14947c] transition-colors">Home</a>
                     <a href="About.html" class="text-[#14947c]">About</a>
                     <a href="#" class="hover:text-[#14947c] transition-colors">Privacy Policy</a>
                     <a href="#" class="hover:text-[#14947c] transition-colors">Resources</a>
@@ -39,24 +40,64 @@
 
     <section class="bg-[#14947c] py-16 text-center text-white">
         <div class="container mx-auto px-4">
-            <h1 class="text-3xl md:text-5xl font-bold mb-4">About Us</h1>
-            <p class="text-lg opacity-90 max-w-2xl mx-auto">The philosophy of incremental change.</p>
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">Our Philosophy</h1>
+            <p class="text-lg opacity-90 max-w-2xl mx-auto">Finding balance and purpose in a modern, overwhelming world.</p>
         </div>
     </section>
 
     <main class="flex-grow container mx-auto px-4 py-16">
-        <div class="max-w-3xl mx-auto bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-gray-100">
-             <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Mission</h2>
-             <div class="prose prose-lg text-gray-600 space-y-6">
-                <p>The Conscientious Life provides the research, tools, and community needed to make small, intentional steps toward a balanced life.</p>
-                <p class="italic text-[#14947c] font-medium border-l-4 border-[#14947c] pl-4">"The key to substantial change is incremental change."</p>
-             </div>
+        <div class="max-w-4xl mx-auto animate-on-scroll opacity-0">
+            
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold text-gray-800 mb-8 text-center">The 5 Pillars of Our Philosophy</h3>
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                    <div class="bg-white p-4 text-center rounded-xl shadow-sm border border-gray-100">
+                        <div class="p-2 bg-teal-50 rounded-lg text-[#14947c] mb-2 inline-block"><i data-lucide="dumbbell" class="w-6 h-6"></i></div>
+                        <span class="block text-gray-800 font-semibold text-sm">Fitness</span>
+                    </div>
+                    <div class="bg-white p-4 text-center rounded-xl shadow-sm border border-gray-100">
+                        <div class="p-2 bg-teal-50 rounded-lg text-[#14947c] mb-2 inline-block"><i data-lucide="apple" class="w-6 h-6"></i></div>
+                        <span class="block text-gray-800 font-semibold text-sm">Diet</span>
+                    </div>
+                    <div class="bg-white p-4 text-center rounded-xl shadow-sm border border-gray-100">
+                        <div class="p-2 bg-teal-50 rounded-lg text-[#14947c] mb-2 inline-block"><i data-lucide="heart" class="w-6 h-6"></i></div>
+                        <span class="block text-gray-800 font-semibold text-sm">Well-being</span>
+                    </div>
+                    <div class="bg-white p-4 text-center rounded-xl shadow-sm border border-gray-100">
+                        <div class="p-2 bg-teal-50 rounded-lg text-[#14947c] mb-2 inline-block"><i data-lucide="brain" class="w-6 h-6"></i></div>
+                        <span class="block text-gray-800 font-semibold text-sm">Conscientiousness</span>
+                    </div>
+                    <div class="bg-white p-4 text-center rounded-xl shadow-sm border border-gray-100">
+                        <div class="p-2 bg-teal-50 rounded-lg text-[#14947c] mb-2 inline-block"><i data-lucide="leaf" class="w-6 h-6"></i></div>
+                        <span class="block text-gray-800 font-semibold text-sm">Environment</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-6 text-lg text-gray-700 leading-relaxed bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-gray-100">
+                <p>This blog is to provide a guide to assist people who feel overwhelmed by the modern world, who want to take control of their lives and make a difference while having a sense of balance as to who one truly is and being at one with their environment/world/externus.</p>
+                <p>This is a non-denominational site (there is no belief system implied or being referenced), and what is written is from a humanist perspective. It is hoped that what is written can provide a semblance of hope and allow one to utilise what is conveyed and can be applied to one's everyday dealings in the most positive and proactive manner possible.</p>
+                <p>In the age of Individualism, technology plays on the fears and preferences which further isolates us. This blog aims to assist people in lifting the veil (veil of maya) that restricts those from attaining their true self and see how that perpetuates into society.</p>
+                <p>When we seek to change aspects of our life, our nature is to think of the whole change and with even the greatest will this leads us to being overwhelmed. The key to substantial change is incremental change. This blog will unite all the aspects of person's life and how to attain a balance and a sense of worth.</p>
+                <p class="italic text-center text-gray-500 pt-4">These themes are divided between the self and the external, which shows how interconnected we all are.</p>
+            </div>
         </div>
     </main>
 
     <footer class="bg-white border-t py-12 text-center text-gray-500 text-sm">
         <p>&copy; 2024 The Conscientious Life. All Rights Reserved.</p>
     </footer>
-    <script>lucide.createIcons();</script>
+    <script>
+        lucide.createIcons();
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('slide-up');
+                    entry.target.classList.remove('opacity-0');
+                }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.animate-on-scroll').forEach(s => observer.observe(s));
+    </script>
 </body>
 </html>
