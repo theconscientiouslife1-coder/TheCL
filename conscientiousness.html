@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conscientiousness - The Conscientious Life</title>
+    
+    <link rel="stylesheet" href="/style.css">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,6 +29,8 @@
 </head>
 <body class="bg-neutral-50 text-gray-800">
 
+    <div class="top-ribbon"></div>
+
     <header id="main-header" class="bg-white shadow-sm border-b border-gray-100">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-4">
@@ -33,7 +38,6 @@
                     <span class="text-xl md:text-2xl font-bold text-[#14947c]">Δ</span>
                     <span class="text-lg md:text-xl font-medium tracking-tight">The Conscientious Life</span>
                 </a>
-
                 <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-600">
                     <a href="#" class="hover:text-[#14947c] transition-colors">Privacy Policy</a>
                     <a href="#" class="hover:text-[#14947c] transition-colors">Resources</a>
@@ -51,7 +55,7 @@
 
     <main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         
-        <section class="mb-16">
+        <section class="mb-12">
             <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-4 mobile-grid-container">
                 <a href="diet.html" class="bg-white p-4 text-center rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all group">
                     <div class="p-2 bg-teal-50 rounded-lg text-[#14947c] mb-2 inline-block group-hover:bg-[#14947c] group-hover:text-white transition-colors">
@@ -59,28 +63,24 @@
                     </div>
                     <span class="block text-gray-700 font-medium text-sm">Diet</span>
                 </a>
-
                 <a href="fitness.html" class="bg-white p-4 text-center rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all group">
                     <div class="p-2 bg-teal-50 rounded-lg text-[#14947c] mb-2 inline-block group-hover:bg-[#14947c] group-hover:text-white transition-colors">
                         <i data-lucide="dumbbell" class="w-6 h-6"></i>
                     </div>
                     <span class="block text-gray-700 font-medium text-sm">Fitness</span>
                 </a>
-
                 <a href="well-being.html" class="bg-white p-4 text-center rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all group">
                     <div class="p-2 bg-teal-50 rounded-lg text-[#14947c] mb-2 inline-block group-hover:bg-[#14947c] group-hover:text-white transition-colors">
                         <i data-lucide="heart" class="w-6 h-6"></i>
                     </div>
                     <span class="block text-gray-700 font-medium text-sm">Well-being</span>
                 </a>
-
                 <a href="environment.html" class="bg-white p-4 text-center rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all group">
                     <div class="p-2 bg-teal-50 rounded-lg text-[#14947c] mb-2 inline-block group-hover:bg-[#14947c] group-hover:text-white transition-colors">
                         <i data-lucide="leaf" class="w-6 h-6"></i>
                     </div>
                     <span class="block text-gray-700 font-medium text-sm">Environment</span>
                 </a>
-
                 <a href="conscientiousness.html" class="bg-white p-4 text-center rounded-xl shadow-sm border-2 border-[#14947c] transition-all">
                     <div class="p-2 bg-[#14947c] rounded-lg text-white mb-2 inline-block">
                         <i data-lucide="brain" class="w-6 h-6"></i>
@@ -90,8 +90,17 @@
             </div>
         </section>
 
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
-            <div class="lg:col-span-2 space-y-10">
+        <section class="max-w-4xl mx-auto text-center mb-16 px-4">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Mastering Intentional Action</h2>
+            <p class="text-gray-600 leading-relaxed text-lg italic">
+                Conscientiousness is the foundation of a meaningful life. In this pillar, we delve into the habits, mindsets, and organizational strategies that allow us to align our daily behavior with our long-term values.
+            </p>
+            <div class="mt-6 w-16 h-1 bg-[#14947c]/20 mx-auto"></div>
+        </section>
+
+        <div class="flex flex-col lg:flex-row gap-12">
+            
+            <div class="lg:w-2/3 space-y-10">
                 <article class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col md:flex-row animate-on-scroll opacity-0">
                     <img src="https://via.placeholder.com/400x300" alt="Self-Awareness" class="w-full md:w-1/3 h-52 md:h-auto object-cover">
                     <div class="p-8 flex flex-col justify-between w-full">
@@ -101,42 +110,51 @@
                         </div>
                         <div class="flex justify-between items-center pt-4 border-t border-gray-50">
                             <span class="text-sm text-gray-500">Habits | Alex P.</span>
-                            <a href="#" class="text-[#14947c] hover:underline font-semibold">Read Article &rarr;</a>
+                            <a href="#" class="text-[#14947c] hover:underline font-semibold flex items-center">
+                                Read Article <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                            </a>
                         </div>
                     </div>
                 </article>
 
-                <div class="flex justify-center space-x-2">
+                <div class="flex justify-center space-x-2 pt-8">
                     <a href="#" class="px-4 py-2 bg-white border border-gray-200 rounded-lg text-gray-600 hover:bg-gray-50">Previous</a>
                     <a href="#" class="px-4 py-2 bg-[#14947c] text-white rounded-lg">1</a>
                     <a href="#" class="px-4 py-2 bg-white border border-gray-200 rounded-lg text-gray-600 hover:bg-gray-50">Next</a>
                 </div>
             </div>
 
-            <aside class="space-y-8">
+            <aside class="lg:w-1/3 space-y-8">
+                
                 <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
                     <h4 class="text-xl font-bold text-gray-900 mb-6">Popular in Growth</h4>
                     <ul class="space-y-4">
                         <li>
                             <a href="#" class="group flex items-start">
-                                <span class="text-[#14947c] mr-2">•</span>
+                                <i data-lucide="check-circle" class="w-4 h-4 text-[#14947c] mr-2 mt-1"></i>
                                 <span class="text-gray-600 group-hover:text-[#14947c] transition-colors">The Simple Guide to Better Listening</span>
                             </a>
                         </li>
                     </ul>
                 </div>
+
+                <div class="sticky top-8 bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <h4 class="font-bold text-gray-900 mb-2">Growth Newsletter</h4>
+                    <p class="text-sm text-gray-500 mb-4">Insights on intentional living delivered to your inbox.</p>
+                    <input type="email" placeholder="Your email" class="w-full px-4 py-2 rounded-lg border border-gray-200 mb-3 text-sm focus:ring-2 focus:ring-[#14947c] outline-none">
+                    <button class="w-full bg-[#14947c] text-white py-2 rounded-lg font-bold text-sm">Subscribe Now</button>
+                </div>
+
             </aside>
         </div>
     </main>
 
-    <footer class="bg-white border-t py-10 text-center text-gray-500 text-sm">
+    <footer class="bg-white border-t py-12 text-center text-gray-500 text-sm">
         <p>&copy; 2024 The Conscientious Life. All Rights Reserved.</p>
     </footer>
 
     <script>
-        // Ensure icons are created
         lucide.createIcons();
-
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
