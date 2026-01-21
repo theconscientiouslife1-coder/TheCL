@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - The Conscientious Life</title>
-    
     <link rel="stylesheet" href="/style.css">
-
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,27 +13,24 @@
     <style>
         body { font-family: 'Inter', sans-serif; display: flex; flex-direction: column; min-height: 100vh; }
         .flex-grow { flex-grow: 1; }
-        @keyframes slide-up-and-fade {
-            0% { opacity: 0; transform: translateY(20px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-        .slide-up { animation: slide-up-and-fade 0.7s ease-out forwards; }
+        @keyframes slide-up-and-fade { 0% { opacity: 0; transform: translateY(20px); } 100% { opacity: 1; transform: translateY(0); } }
+        .slide-up { animation: slide-up-and-fade 0.8s ease-out forwards; }
         .opacity-0 { opacity: 0; }
     </style>
 </head>
 <body class="bg-neutral-50 text-gray-800">
-
     <div class="top-ribbon"></div>
 
-    <header class="bg-white shadow-sm border-b border-gray-100">
+    <header class="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-4">
                 <a href="index.html" class="flex items-center space-x-2 text-gray-800">
-                    <span class="text-xl md:text-2xl font-bold text-[#14947c]">Δ</span>
-                    <span class="text-lg md:text-xl font-medium tracking-tight">The Conscientious Life</span>
+                    <span class="text-xl font-bold text-[#14947c]">Δ</span>
+                    <span class="text-lg font-medium">The Conscientious Life</span>
                 </a>
-                <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-600">
-                    <a href="index.html" class="hover:text-[#14947c] transition-colors">Home</a>
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-600">
+                    <a href="About.html" class="text-[#14947c]">About</a>
+                    <a href="#" class="hover:text-[#14947c] transition-colors">Privacy Policy</a>
                     <a href="#" class="hover:text-[#14947c] transition-colors">Resources</a>
                 </nav>
             </div>
@@ -45,49 +40,23 @@
     <section class="bg-[#14947c] py-16 text-center text-white">
         <div class="container mx-auto px-4">
             <h1 class="text-3xl md:text-5xl font-bold mb-4">About Us</h1>
-            <p class="text-lg opacity-90 max-w-2xl mx-auto">Understanding the philosophy behind the conscientious path.</p>
+            <p class="text-lg opacity-90 max-w-2xl mx-auto">The philosophy of incremental change.</p>
         </div>
     </section>
 
-    <main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div class="max-w-3xl mx-auto space-y-12">
-            
-            <section class="bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-gray-100 animate-on-scroll opacity-0">
-                <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Mission</h2>
-                <div class="prose prose-lg text-gray-600 space-y-6">
-                    <p>The Conscientious Life was born out of a simple observation: the modern world often pulls us in opposite directions. We are told to focus on self-care, yet the environment suffers. We are told to be productive, yet our well-being declines.</p>
-                    <p>We believe these pillars—<strong>Diet, Fitness, Well-being, Environment, and Conscientiousness</strong>—are not separate goals, but a single, interconnected way of living.</p>
-                </div>
-            </section>
-
-            <section class="bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-gray-100 animate-on-scroll opacity-0">
-                <h2 class="text-3xl font-bold text-gray-900 mb-6">The Δ Philosophy</h2>
-                <div class="prose prose-lg text-gray-600 space-y-6">
-                    <p>The symbol <strong>Δ (Delta)</strong> represents change. Specifically, we focus on the incremental change that happens when a person decides to live with intention. Our goal is to provide the research, tools, and community needed to make those small steps feel sustainable and rewarding.</p>
-                    <p class="italic text-[#14947c] font-medium border-l-4 border-[#14947c] pl-4">"The key to substantial change is incremental change."</p>
-                </div>
-            </section>
-
+    <main class="flex-grow container mx-auto px-4 py-16">
+        <div class="max-w-3xl mx-auto bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-gray-100">
+             <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Mission</h2>
+             <div class="prose prose-lg text-gray-600 space-y-6">
+                <p>The Conscientious Life provides the research, tools, and community needed to make small, intentional steps toward a balanced life.</p>
+                <p class="italic text-[#14947c] font-medium border-l-4 border-[#14947c] pl-4">"The key to substantial change is incremental change."</p>
+             </div>
         </div>
     </main>
 
     <footer class="bg-white border-t py-12 text-center text-gray-500 text-sm">
         <p>&copy; 2024 The Conscientious Life. All Rights Reserved.</p>
     </footer>
-
-    <script>
-        lucide.createIcons();
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('slide-up');
-                    entry.target.classList.remove('opacity-0');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('.animate-on-scroll').forEach(section => observer.observe(section));
-    </script>
+    <script>lucide.createIcons();</script>
 </body>
 </html>
