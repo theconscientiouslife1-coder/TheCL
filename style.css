@@ -1,0 +1,8 @@
+/* style.css */
+
+/* This creates the signature green ribbon at the top of the page */
+.top-ribbon {
+    height: 0.5rem; /* This is the 'h-2' equivalent */
+    background-color: #14947c;
+    width: 100%;
+}
