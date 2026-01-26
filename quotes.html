@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quotes - The Conscientious Life</title>
+    <title>Quote! - The Conscientious Life</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        /* Using the exact Inter font and ribbon style from index.html */
         body { font-family: 'Inter', sans-serif; display: flex; flex-direction: column; min-height: 100vh; }
         .top-ribbon { height: 4px; background-color: #14947c; width: 100%; }
-        /* Style for the squared bullet point */
+        
+        /* Squared bullet style */
         .square-bullet {
             width: 12px;
             height: 12px;
@@ -43,22 +47,22 @@
 
     <section class="bg-[#14947c] py-20 text-center text-white">
         <div class="container mx-auto px-4">
-            <h1 class="text-4xl md:text-5xl font-bold uppercase tracking-widest">Quotes</h1>
+            <h1 class="text-4xl md:text-5xl font-bold uppercase tracking-widest">Quote!</h1>
         </div>
     </section>
 
     <main class="flex-grow container mx-auto px-4 py-16">
         <div class="max-w-4xl mx-auto space-y-8">
             
-            <div class="flex items-center p-6 bg-white rounded-lg shadow-sm">
+            <div class="flex items-center p-6 bg-white rounded-lg shadow-sm border border-gray-100">
                 <div class="square-bullet"></div>
                 <blockquote class="italic text-lg md:text-xl text-gray-700">
                     "We are what we repeatedly do. Excellence, then, is not an act, but a habit" 
-                    <span class="font-bold not-italic ml-2">— Aristotle</span>
+                    <span class="font-bold not-italic ml-2 text-gray-900">— Aristotle</span>
                 </blockquote>
             </div>
-
-            </div>
+            
+        </div>
     </main>
 
     <footer class="bg-white border-t py-12 text-center text-gray-500 text-sm">
