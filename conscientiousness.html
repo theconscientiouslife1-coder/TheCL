@@ -103,6 +103,23 @@
         <div class="flex flex-col lg:flex-row gap-12">
             
             <div class="lg:w-2/3 space-y-10">
+                
+                <article class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col md:flex-row animate-on-scroll opacity-0">
+                    <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&q=80&w=400&h=300" alt="Conscientious Philosophy" class="w-full md:w-1/3 h-52 md:h-auto object-cover">
+                    <div class="p-8 flex flex-col justify-between w-full">
+                        <div>
+                            <h2 class="text-2xl font-bold text-gray-900 mb-3">The Conscientious Life (Part 1)</h2>
+                            <p class="text-gray-600 mb-4">Explore what it means to be truly conscientious beyond just work. From the "Big Five" personality traits to Immanuel Kant’s Kingdom of Ends.</p>
+                        </div>
+                        <div class="flex justify-between items-center pt-4 border-t border-gray-50">
+                            <span class="text-sm text-gray-500">Philosophy | Admin</span>
+                            <a href="conscientious-life-part-1.html" class="text-[#14947c] hover:underline font-semibold flex items-center">
+                                Read Article <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
                 <article class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col md:flex-row animate-on-scroll opacity-0">
                     <img src="https://via.placeholder.com/400x300" alt="Self-Awareness" class="w-full md:w-1/3 h-52 md:h-auto object-cover">
                     <div class="p-8 flex flex-col justify-between w-full">
@@ -127,40 +144,9 @@
             </div>
 
             <aside class="lg:w-1/3 space-y-8">
-                
                 <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
                     <h4 class="text-xl font-bold text-gray-900 mb-6">Popular in Growth</h4>
                     <ul class="space-y-4">
                         <li>
                             <a href="#" class="group flex items-start">
-                                <i data-lucide="check-circle" class="w-4 h-4 text-[#14947c] mr-2 mt-1"></i>
-                                <span class="text-gray-600 group-hover:text-[#14947c] transition-colors">The Simple Guide to Better Listening</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                
-
-            </aside>
-        </div>
-    </main>
-
-    <footer class="bg-white border-t py-12 text-center text-gray-500 text-sm">
-        <p>&copy; 2024 The Conscientious Life. All Rights Reserved.</p>
-    </footer>
-
-    <script>
-        lucide.createIcons();
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('slide-up');
-                    entry.target.classList.remove('opacity-0');
-                }
-            });
-        }, { threshold: 0.1 });
-        document.querySelectorAll('.animate-on-scroll').forEach(s => observer.observe(s));
-    </script>
-</body>
-</html>
+                                <i data-lucide="check
