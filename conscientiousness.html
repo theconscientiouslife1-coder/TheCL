@@ -6,25 +6,12 @@
     <title>Conscientiousness - The Conscientious Life</title>
     
     <link rel="stylesheet" href="/style.css">
-
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; display: flex; flex-direction: column; min-height: 100vh; }
         .flex-grow { flex-grow: 1; }
-        @keyframes slide-up-and-fade { 
-            0% { opacity: 0; transform: translateY(20px); } 
-            100% { opacity: 1; transform: translateY(0); } 
-        }
-        .slide-up { animation: slide-up-and-fade 0.8s ease-out forwards; }
-        .opacity-0 { opacity: 0; }
-        @media (max-width: 639px) {
-            .mobile-grid-container { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-            .mobile-grid-container > :nth-child(5) { grid-column: span 2 / span 2; justify-self: center; }
-        }
     </style>
 </head>
 <body class="bg-neutral-50 text-gray-800">
@@ -58,32 +45,32 @@
     <main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         
         <section class="mb-12">
-            <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-4 mobile-grid-container">
+            <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-4">
                 <a href="diet.html" class="bg-white p-4 text-center rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all group">
-                    <div class="p-2 bg-teal-50 rounded-lg text-[#14947c] mb-2 inline-block group-hover:bg-[#14947c] group-hover:text-white transition-colors">
+                    <div class="p-2 bg-teal-50 rounded-lg text-[#14947c] mb-2 inline-block group-hover:bg-[#14947c] group-hover:text-white">
                         <i data-lucide="apple" class="w-6 h-6"></i>
                     </div>
                     <span class="block text-gray-700 font-medium text-sm">Diet</span>
                 </a>
                 <a href="fitness.html" class="bg-white p-4 text-center rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all group">
-                    <div class="p-2 bg-teal-50 rounded-lg text-[#14947c] mb-2 inline-block group-hover:bg-[#14947c] group-hover:text-white transition-colors">
+                    <div class="p-2 bg-teal-50 rounded-lg text-[#14947c] mb-2 inline-block group-hover:bg-[#14947c] group-hover:text-white">
                         <i data-lucide="dumbbell" class="w-6 h-6"></i>
                     </div>
                     <span class="block text-gray-700 font-medium text-sm">Fitness</span>
                 </a>
                 <a href="well-being.html" class="bg-white p-4 text-center rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all group">
-                    <div class="p-2 bg-teal-50 rounded-lg text-[#14947c] mb-2 inline-block group-hover:bg-[#14947c] group-hover:text-white transition-colors">
+                    <div class="p-2 bg-teal-50 rounded-lg text-[#14947c] mb-2 inline-block group-hover:bg-[#14947c] group-hover:text-white">
                         <i data-lucide="heart" class="w-6 h-6"></i>
                     </div>
                     <span class="block text-gray-700 font-medium text-sm">Well-being</span>
                 </a>
                 <a href="environment.html" class="bg-white p-4 text-center rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all group">
-                    <div class="p-2 bg-teal-50 rounded-lg text-[#14947c] mb-2 inline-block group-hover:bg-[#14947c] group-hover:text-white transition-colors">
+                    <div class="p-2 bg-teal-50 rounded-lg text-[#14947c] mb-2 inline-block group-hover:bg-[#14947c] group-hover:text-white">
                         <i data-lucide="leaf" class="w-6 h-6"></i>
                     </div>
                     <span class="block text-gray-700 font-medium text-sm">Environment</span>
                 </a>
-                <a href="conscientiousness.html" class="bg-white p-4 text-center rounded-xl shadow-sm border-2 border-[#14947c] transition-all">
+                <a href="conscientiousness.html" class="bg-white p-4 text-center rounded-xl shadow-sm border-2 border-[#14947c]">
                     <div class="p-2 bg-[#14947c] rounded-lg text-white mb-2 inline-block">
                         <i data-lucide="brain" class="w-6 h-6"></i>
                     </div>
@@ -92,61 +79,33 @@
             </div>
         </section>
 
-        <section class="max-w-4xl mx-auto text-center mb-16 px-4">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4">Mastering Intentional Action</h2>
-            <p class="text-gray-600 leading-relaxed text-lg italic">
-                Conscientiousness is the foundation of a meaningful life. In this pillar, we delve into the habits, mindsets, and organizational strategies that allow us to align our daily behavior with our long-term values.
-            </p>
-            <div class="mt-6 w-16 h-1 bg-[#14947c]/20 mx-auto"></div>
-        </section>
-
         <div class="flex flex-col lg:flex-row gap-12">
-            
             <div class="lg:w-2/3 space-y-10">
                 
-                <article class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col md:flex-row animate-on-scroll opacity-0">
-                    <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&q=80&w=400&h=300" alt="Conscientious Philosophy" class="w-full md:w-1/3 h-52 md:h-auto object-cover">
+                <article class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col md:flex-row">
+                    <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&q=80&w=400&h=300" alt="Conscientiousness" class="w-full md:w-1/3 h-52 md:h-auto object-cover">
                     <div class="p-8 flex flex-col justify-between w-full">
                         <div>
                             <h2 class="text-2xl font-bold text-gray-900 mb-3">The Conscientious Life (Part 1)</h2>
-                            <p class="text-gray-600 mb-4">Explore what it means to be truly conscientious beyond just work. From the "Big Five" personality traits to Immanuel Kant’s Kingdom of Ends.</p>
+                            <p class="text-gray-600 mb-4">What does it mean to be conscientious? Explore the foundations of intentional action and moving beyond isolated existence[cite: 3].</p>
                         </div>
                         <div class="flex justify-between items-center pt-4 border-t border-gray-50">
                             <span class="text-sm text-gray-500">Philosophy | Admin</span>
-                            <a href="conscientious-life-part-1.html" class="text-[#14947c] hover:underline font-semibold flex items-center">
+                            <a href="CL_1.html" class="text-[#14947c] hover:underline font-semibold flex items-center">
                                 Read Article <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
                             </a>
                         </div>
                     </div>
                 </article>
 
-                <article class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col md:flex-row animate-on-scroll opacity-0">
-                    <img src="https://via.placeholder.com/400x300" alt="Self-Awareness" class="w-full md:w-1/3 h-52 md:h-auto object-cover">
-                    <div class="p-8 flex flex-col justify-between w-full">
-                        <div>
-                            <h2 class="text-2xl font-bold text-gray-900 mb-3">The Daily Audit: Radical Self-Awareness</h2>
-                            <p class="text-gray-600 mb-4">Learn how to conduct a daily audit of your decisions to align them with your core values and conduct intentional change.</p>
-                        </div>
-                        <div class="flex justify-between items-center pt-4 border-t border-gray-50">
-                            <span class="text-sm text-gray-500">Habits | Alex P.</span>
-                            <a href="#" class="text-[#14947c] hover:underline font-semibold flex items-center">
-                                Read Article <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <div class="flex justify-center space-x-2 pt-8">
-                    <a href="#" class="px-4 py-2 bg-white border border-gray-200 rounded-lg text-gray-600 hover:bg-gray-50">Previous</a>
-                    <a href="#" class="px-4 py-2 bg-[#14947c] text-white rounded-lg">1</a>
-                    <a href="#" class="px-4 py-2 bg-white border border-gray-200 rounded-lg text-gray-600 hover:bg-gray-50">Next</a>
-                </div>
             </div>
+        </div>
+    </main>
 
-            <aside class="lg:w-1/3 space-y-8">
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-                    <h4 class="text-xl font-bold text-gray-900 mb-6">Popular in Growth</h4>
-                    <ul class="space-y-4">
-                        <li>
-                            <a href="#" class="group flex items-start">
-                                <i data-lucide="check
+    <footer class="bg-white border-t py-12 text-center text-gray-500 text-sm">
+        <p>&copy; 2026 The Conscientious Life. All Rights Reserved.</p>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>
