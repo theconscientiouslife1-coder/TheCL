@@ -15,6 +15,7 @@
     <style>
         body { font-family: 'Inter', sans-serif; display: flex; flex-direction: column; min-height: 100vh; }
         .flex-grow { flex-grow: 1; }
+        .top-ribbon { height: 4px; background-color: #14947c; width: 100%; }
         @keyframes slide-up-and-fade { 
             0% { opacity: 0; transform: translateY(20px); } 
             100% { opacity: 1; transform: translateY(0); } 
@@ -48,16 +49,16 @@
         </div>
     </header>
 
-    <section class="bg-[#14947c] py-12 text-center text-white">
+    <section class="bg-[#14947c] py-16 text-center text-white">
         <div class="container mx-auto px-4">
-            <h1 class="text-3xl md:text-5xl font-bold mb-2">Diet</h1>
-            <p class="text-lg opacity-90">Mindful Eating and Nutrition for a Balanced Life</p>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Diet</h1>
+            <p class="text-lg md:text-xl opacity-90 max-w-2xl mx-auto">The Foundation of Humanist Well-being</p>
         </div>
     </section>
 
     <main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         
-        <section class="mb-12">
+        <section class="mb-16">
             <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-4 mobile-grid-container">
                 <a href="diet.html" class="bg-white p-4 text-center rounded-xl shadow-sm border-2 border-[#14947c] transition-all">
                     <div class="p-2 bg-[#14947c] rounded-lg text-white mb-2 inline-block">
@@ -65,28 +66,24 @@
                     </div>
                     <span class="block text-[#14947c] font-bold text-sm">Diet</span>
                 </a>
-
                 <a href="fitness.html" class="bg-white p-4 text-center rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all group">
                     <div class="p-2 bg-teal-50 rounded-lg text-[#14947c] mb-2 inline-block group-hover:bg-[#14947c] group-hover:text-white transition-colors">
                         <i data-lucide="dumbbell" class="w-6 h-6"></i>
                     </div>
                     <span class="block text-gray-700 font-medium text-sm">Fitness</span>
                 </a>
-
                 <a href="well-being.html" class="bg-white p-4 text-center rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all group">
                     <div class="p-2 bg-teal-50 rounded-lg text-[#14947c] mb-2 inline-block group-hover:bg-[#14947c] group-hover:text-white transition-colors">
                         <i data-lucide="heart" class="w-6 h-6"></i>
                     </div>
                     <span class="block text-gray-700 font-medium text-sm">Well-being</span>
                 </a>
-
                 <a href="environment.html" class="bg-white p-4 text-center rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all group">
                     <div class="p-2 bg-teal-50 rounded-lg text-[#14947c] mb-2 inline-block group-hover:bg-[#14947c] group-hover:text-white transition-colors">
                         <i data-lucide="leaf" class="w-6 h-6"></i>
                     </div>
                     <span class="block text-gray-700 font-medium text-sm">Environment</span>
                 </a>
-
                 <a href="conscientiousness.html" class="bg-white p-4 text-center rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all group">
                     <div class="p-2 bg-teal-50 rounded-lg text-[#14947c] mb-2 inline-block group-hover:bg-[#14947c] group-hover:text-white transition-colors">
                         <i data-lucide="brain" class="w-6 h-6"></i>
@@ -96,51 +93,72 @@
             </div>
         </section>
 
-        <section class="max-w-4xl mx-auto text-center mb-16 px-4">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4">Nourishing the Self</h2>
-            <p class="text-gray-600 leading-relaxed text-lg italic">
-                Our relationship with food is one of the most fundamental aspects of a conscientious life. This pillar explores how mindful nutrition supports our physical health, mental clarity, and ethical commitment to the world.
+        <section class="max-w-4xl mx-auto text-center mb-20 px-4 animate-on-scroll opacity-0">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Nourishing the Conscientious Life</h2>
+            <p class="text-gray-600 leading-relaxed text-lg">
+                The first pillar focuses on the importance of one’s diet[cite: 94]. Whatever we want to be or do our diet is fundamental to allowing us to achieve this[cite: 95]. What we input will have a bearing far beyond just the physiology of the person[cite: 96]. This pillar will look at the importance of diet, the science behind what ingest and its association with the Conscientious Life[cite: 97].
             </p>
-            <div class="mt-6 w-16 h-1 bg-[#14947c]/20 mx-auto"></div>
+            <div class="mt-8 w-24 h-1 bg-[#14947c]/20 mx-auto"></div>
         </section>
 
         <div class="flex flex-col lg:flex-row gap-12">
             
-            <div class="lg:w-2/3 space-y-10">
-                <article class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col md:flex-row animate-on-scroll opacity-0">
-                    <img src="https://via.placeholder.com/400x300" alt="Mindful Eating" class="w-full md:w-1/3 h-52 md:h-auto object-cover">
-                    <div class="p-8 flex flex-col justify-between w-full">
-                        <div>
-                            <h2 class="text-2xl font-bold text-gray-900 mb-3">The Art of Mindful Eating in a Fast-Paced World</h2>
-                            <p class="text-gray-600 mb-4">Learn to savor your food, recognize true hunger cues, and build a healthier relationship with what you eat.</p>
+            <div class="lg:w-2/3 space-y-12">
+                
+                <article class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden animate-on-scroll opacity-0">
+                    <div class="p-8">
+                        <div class="flex items-center space-x-2 text-[#14947c] mb-4">
+                            <span class="text-xs font-bold uppercase tracking-widest">Part One</span>
                         </div>
-                        <div class="flex justify-between items-center pt-4 border-t border-gray-50">
-                            <span class="text-sm text-gray-500">Nutrition | Alex P.</span>
-                            <a href="#" class="text-[#14947c] hover:underline font-semibold flex items-center">
-                                Read Article <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
-                            </a>
-                        </div>
+                        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Diet - Fundamental #1</h2>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            One of the most important things we can do to assist our <a href="well-being.html" class="text-[#14947c] font-bold hover:underline">WELL-BEING</a> is to ensure we are living in a balanced manner. This article explores how our diet serves as a <a href="common-sense.html" class="underline hover:text-[#14947c] transition-colors">COMMON SENSE</a> cornerstone for who we are and who we want to be.
+                        </p>
+                        <a href="diet-fundamental-1.html" class="inline-flex items-center text-[#14947c] font-semibold hover:translate-x-1 transition-transform">
+                            Read Article <i data-lucide="arrow-right" class="ml-2 w-5 h-5"></i>
+                        </a>
                     </div>
                 </article>
 
-                </div>
+                <article class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden animate-on-scroll opacity-0">
+                    <div class="p-8">
+                        <div class="flex items-center space-x-2 text-[#14947c] mb-4">
+                            <span class="text-xs font-bold uppercase tracking-widest">The Research</span>
+                        </div>
+                        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">The Science of Our Diet</h2>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            A deep dive into the gut-brain axis and how scientifically validated research helps us distinguish real nutritional needs from the "pseudoscience bucket" to improve <a href="well-being.html" class="text-[#14947c] font-bold hover:underline">WELL-BEING</a>.
+                        </p>
+                        <a href="science-of-diet.html" class="inline-flex items-center text-[#14947c] font-semibold hover:translate-x-1 transition-transform">
+                            Read Article <i data-lucide="arrow-right" class="ml-2 w-5 h-5"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden animate-on-scroll opacity-0">
+                    <div class="p-8">
+                        <div class="flex items-center space-x-2 text-[#14947c] mb-4">
+                            <span class="text-xs font-bold uppercase tracking-widest">Action Plan</span>
+                        </div>
+                        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Diet - Next Steps</h2>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Following <a href="science-of-diet.html" class="underline italic hover:text-[#14947c] transition-colors">THE SCIENCE OF OUR DIET</a>, we explore how to implement plant-forward changes and focus on the <a href="mindfulness.html" class="font-bold text-[#14947c] hover:underline">NOW</a> through intentional meal preparation.
+                        </p>
+                        <a href="diet-next-steps.html" class="inline-flex items-center text-[#14947c] font-semibold hover:translate-x-1 transition-transform">
+                            Read Article <i data-lucide="arrow-right" class="ml-2 w-5 h-5"></i>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
 
             <aside class="lg:w-1/3 space-y-8">
-                
                 <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-                    <h4 class="text-xl font-bold text-gray-900 mb-6">Popular in Diet</h4>
-                    <ul class="space-y-4">
-                        <li>
-                            <a href="#" class="group flex items-start">
-                                <i data-lucide="check-circle" class="w-4 h-4 text-[#14947c] mr-2 mt-1"></i>
-                                <span class="text-gray-600 group-hover:text-[#14947c] transition-colors">Decoding Food Labels: What You Need to Know</span>
-                            </a>
-                        </li>
-                    </ul>
+                    <h4 class="text-xl font-bold text-gray-900 mb-6">Pillar Mission</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        Our goal is to provide methods to gain habits that ensure you are only ingesting what is best for you, looping back to how important diet is to all categories of the Conscientious Life.
+                    </p>
                 </div>
-
-                
-
             </aside>
         </div>
     </main>
@@ -150,10 +168,7 @@
     </footer>
 
     <script>
-        // Trigger Lucide icons
         lucide.createIcons();
-
-        // Scroll Animation Logic
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
