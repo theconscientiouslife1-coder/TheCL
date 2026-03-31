@@ -2,26 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Environment I - The Conscientious Life</title>
     <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
+        body { font-family: 'Inter', sans-serif; }
         .top-ribbon { height: 4px; background-color: #14947c; width: 100%; }
     </style>
 </head>
-<body class="bg-white text-gray-900">
+<body class="bg-white text-gray-900 flex flex-col min-h-screen">
     <div class="top-ribbon"></div>
-    <header class="py-6 border-b border-gray-100 mb-12">
-        <div class="container mx-auto px-4"><a href="environment.html" class="text-sm font-medium text-gray-500 hover:text-[#14947c]">Back to Environment</a></div>
+    <header class="border-b border-gray-100 py-6 bg-white sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-2 no-underline group">
+                <span class="text-2xl font-bold text-[#14947c]">Δ</span>
+                <span class="text-xl font-bold tracking-tight text-gray-900 group-hover:text-[#14947c] transition-colors">The Conscientious Life</span>
+            </a>
+            <a href="environment.html" class="text-sm font-medium text-gray-500 hover:text-[#14947c]">Back to Environment</a>
+        </div>
     </header>
-    <main class="max-w-3xl mx-auto px-6 py-12">
+
+    <section class="bg-[#14947c] py-20 text-white text-center">
+        <h1 class="text-4xl md:text-5xl font-extrabold">The Environment I</h1>
+    </section>
+
+    <main class="max-w-3xl mx-auto px-6 py-16 flex-grow">
         <article class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-            <h1 class="uppercase text-[#14947c] font-extrabold tracking-tight">The Environment</h1>
             <p>We live in a world where we have become sanitised and at worse apathetic by all we see and hear. TV screens, personal devices are constantly churning out the ills of the world, nevertheless, if we are not experiencing the catastrophises for ourselves, we simply scroll past and tune out.</p>
 
-            <p>The space where we experiment with the ideas we have within, engage with others, work, enjoy, rest is now in a slow decline. How did we get here? One key component is the economic experiment, which began 50 years ago, <a href="https://plato.stanford.edu/entries/neoliberalism/" target="_blank" class="text-[#14947c] underline">neo-liberalism</a>; it denotes a conception of freedom as an overarching social value associated with reducing state functions.</p>
+            <p>The environment crisis is no different, however where we have had wars, famines, economic collapses and various other crisis throughout the millennia, humanity has never experienced the degradation of its environment in those moments. We on the other hand are dealing with such a situation. The space where we experiment with the ideas we have within, engage with others, work, enjoy, rest is now in a slow decline and the world that will remain will be nothing to what any civilisation has encountered.</p>
 
-            <p>The Conscientious Life requires you to make informed decisions and think beyond the immediate. We must understand where a product came from and if it can be recycled. An old adage was <span class="text-[#14947c] font-bold underline italic">REDUCE, REUSE, RECYCLE</span> in that order. By making informed autonomous decisions, we re-enforce our <span class="text-[#14947c] font-bold underline uppercase">BEING</span>.</p>
+            <p>How did we get here? Well one key component is the economic experiment, which began 50 years ago, <a href="https://plato.stanford.edu/entries/neoliberalism/" target="_blank" class="text-blue-600 underline font-semibold">[neo-liberalism]</a>; it denotes a conception of freedom as an overarching social value associated with reducing state functions to those of a minimal state. The over-arching aspect of the individual, in this ideology, is the freedom to consume, which basically reduces us to the level of consumers.</p>
+            
+            <p>Of the various economic schools that endorsed neo-liberalism, there was an argument against planned societies i.e. communism, that it is impossible to build such societies as individuals only have a limited amount of knowledge on how the world operates therefore to attempt to plan would not provide a universal picture as to what a society should be. In addition, it was also argued that the very essence of being human is the belief that we are autonomous i.e. free to make our own choices.</p>
+
+            <p>The rationale that we only have a limited knowledge of the world has unfortunately led to the situation where individuals are unaware of the impacts their consumption habits lead to, neo-liberalism is almost excusing us for not thinking beyond those actions has on the environment. But the consequences of our actions have led us to where we are at, if not even past, the breaking point of the eco-system that sustains life on this planet.</p>
         </article>
     </main>
+
+    <footer class="py-12 border-t border-gray-100 text-center text-gray-400 text-xs">
+        <p>&copy; 2026 The Conscientious Life. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
