@@ -2,27 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Belief - The Conscientious Life</title>
     <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
         .top-ribbon { height: 4px; background-color: #14947c; width: 100%; }
     </style>
 </head>
-<body class="bg-white text-gray-900">
+<body class="bg-white text-gray-900 flex flex-col min-h-screen">
     <div class="top-ribbon"></div>
-    <header class="border-b border-gray-100 py-6 bg-white">
-        <div class="container mx-auto px-4 flex justify-between items-center">
-            <a href="index.html" class="text-xl font-bold text-gray-900">The Conscientious Life</a>
+    <header class="border-b border-gray-100 py-6 bg-white sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-2 no-underline group">
+                <span class="text-2xl font-bold text-[#14947c]">Δ</span>
+                <span class="text-xl font-bold tracking-tight text-gray-900 group-hover:text-[#14947c] transition-colors">The Conscientious Life</span>
+            </a>
             <a href="well-being.html" class="text-sm font-medium text-gray-500 hover:text-[#14947c]">Back to Well-Being</a>
         </div>
     </header>
 
     <section class="bg-[#14947c] py-20 text-white text-center">
-        <h1 class="text-4xl font-extrabold uppercase">Belief</h1>
+        <h1 class="text-4xl md:text-5xl font-extrabold">Belief</h1>
     </section>
 
-    <main class="max-w-3xl mx-auto px-6 py-16">
+    <main class="max-w-3xl mx-auto px-6 py-16 flex-grow">
         <article class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
             <p>This article is an attempt to highlight the importance of belief in what we are aiming to be. Whether it be just the first three pillars i.e. Diet, Fitness & Well-being or leading to a Conscientious Life, belief is another cornerstone. Belief that when one put one’s mind to something anything is possible. It may seem like a hollow suggestion to try and stay positive in yourself and what you are trying to achieve, especially if we are trying to look beyond our own personal needs, when we are witnessing an extremely turbulent time in the world, where all seems chaotic.</p>
             
@@ -37,5 +42,9 @@
             <p>Cliches are unfortunately the antidote to <span class="text-[#14947c] font-bold underline uppercase">LIFE</span>. The journey of one thousand miles begins with a first step. But that step can only arise out of a belief that the journey will be successful. As there are vicious circles, which further hasten our disbelief in ourselves, there is, as mentioned, a virtuous cycle which allows belief to take hold. Groundwork needs to be done. The <a href="diet.html" class="text-[#14947c] font-bold underline uppercase">3 FUNDAMENTALS</a> (Diet, Exercise, Rest) are prerequisites and once the whole is in tune and balanced the belief in one’s self will course through one’s being. Keep fighting, keep believing!</p>
         </article>
     </main>
+
+    <footer class="py-12 border-t border-gray-100 text-center text-gray-400 text-xs">
+        <p>&copy; 2026 The Conscientious Life. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
